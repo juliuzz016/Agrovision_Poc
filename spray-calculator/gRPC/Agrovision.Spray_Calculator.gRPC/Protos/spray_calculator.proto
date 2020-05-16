@@ -1,0 +1,19 @@
+syntax = "proto3";
+
+option csharp_namespace = "Agrovision.Spray_Calculator.gRPC.Protos";
+
+package Spray_Calculatorproto;
+
+service Spray_CalculatorGRPCService {
+ rpc CalculateSpray (CalculateSprayRequest) returns (CalculateSprayResponse);
+}
+
+message CalculateSprayRequest {
+ double agentReq =1;
+ double fieldSize =2;
+ double waterRate =3;
+}
+message CalculateSprayResponse {
+ double agentValue =1;
+ double waterValue =2;
+}

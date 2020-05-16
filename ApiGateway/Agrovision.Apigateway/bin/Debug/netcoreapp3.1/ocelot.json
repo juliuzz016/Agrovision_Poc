@@ -1,0 +1,19 @@
+{
+  "ReRoutes": [ //52441
+    {
+      "DownstreamPathTemplate": "/api/Cases/{catchAll}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 52444
+        }
+      ],
+      "UpstreamPathTemplate": "/cases-api/{catchAll}"
+    }
+  ],
+  "GlobalConfiguration": {
+    "BaseUrl": "http://localhost:52440"
+  }
+
+}

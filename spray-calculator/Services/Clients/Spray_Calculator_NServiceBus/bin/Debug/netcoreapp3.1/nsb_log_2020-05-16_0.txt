@@ -1,0 +1,17 @@
+﻿2020-05-16 13:24:48.802 INFO  Logging to 'C:\Projects\Agrovision\spray-calculator\Services\Clients\Spray_Calculator_NServiceBus\bin\Debug\netcoreapp3.1\' with level Info
+2020-05-16 13:24:48.954 INFO  No valid license could be found. Falling back to trial license with start date '2020-05-01'.
+2020-05-16 13:24:48.963 ERROR Trial license expired. Get your free development license at https://particular.net/license/nservicebus?v=7.3.0&t=0&p=windows
+2020-05-16 13:24:48.972 WARN  Opening browser to: https://particular.net/license/nservicebus?v=7.3.0&t=0&p=windows
+2020-05-16 13:26:44.264 INFO  Logging to 'C:\Projects\Agrovision\spray-calculator\Services\Clients\Spray_Calculator_NServiceBus\bin\Debug\netcoreapp3.1\' with level Info
+2020-05-16 13:26:44.404 INFO  No valid license could be found. Falling back to trial license with start date '2020-05-01'.
+2020-05-16 13:26:44.413 ERROR Trial license expired. Get your free development license at https://particular.net/license/nservicebus?v=7.3.0&t=0&p=windows
+2020-05-16 13:26:44.422 WARN  Opening browser to: https://particular.net/license/nservicebus?v=7.3.0&t=0&p=windows
+2020-05-16 13:29:09.471 INFO  Logging to 'C:\Projects\Agrovision\spray-calculator\Services\Clients\Spray_Calculator_NServiceBus\bin\Debug\netcoreapp3.1\' with level Info
+2020-05-16 13:29:09.789 INFO  Selected active license from C:\Users\Julius\AppData\Local\ParticularSoftware\license.xml
+License Expiration: 2020-08-14
+2020-05-16 13:30:04.643 INFO  Logging to 'C:\Projects\Agrovision\spray-calculator\Services\Clients\Spray_Calculator_NServiceBus\bin\Debug\netcoreapp3.1\' with level Info
+2020-05-16 13:30:04.894 INFO  Selected active license from C:\Users\Julius\AppData\Local\ParticularSoftware\license.xml
+License Expiration: 2020-08-14
+2020-05-16 13:30:41.485 INFO  Logging to 'C:\Projects\Agrovision\spray-calculator\Services\Clients\Spray_Calculator_NServiceBus\bin\Debug\netcoreapp3.1\' with level Info
+2020-05-16 13:30:41.730 INFO  Selected active license from C:\Users\Julius\AppData\Local\ParticularSoftware\license.xml
+License Expiration: 2020-08-14

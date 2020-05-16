@@ -1,0 +1,72 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Projects\\Agrovision\\spray-calculator\\Services\\BusinessLogic\\BusinessLogic.Dosage_Calculator\\Dosage_Calculator.csproj": {}
+  },
+  "projects": {
+    "C:\\Projects\\Agrovision\\spray-calculator\\Services\\BusinessLogic\\BusinessLogic.Dosage_Calculator\\Dosage_Calculator.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Projects\\Agrovision\\spray-calculator\\Services\\BusinessLogic\\BusinessLogic.Dosage_Calculator\\Dosage_Calculator.csproj",
+        "projectName": "BusinessLogic.Dosage_Calculator",
+        "projectPath": "C:\\Projects\\Agrovision\\spray-calculator\\Services\\BusinessLogic\\BusinessLogic.Dosage_Calculator\\Dosage_Calculator.csproj",
+        "packagesPath": "C:\\Users\\Julius\\.nuget\\packages\\",
+        "outputPath": "C:\\Projects\\Agrovision\\spray-calculator\\Services\\BusinessLogic\\BusinessLogic.Dosage_Calculator\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Microsoft\\Xamarin\\NuGet\\",
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Julius\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {},
+          "https://pkgs.dev.azure.com/TransAfrica/Ecosystem/_packaging/EcosystemFeed/nuget/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "dependencies": {
+            "System.Threading.Tasks": {
+              "target": "Package",
+              "version": "[4.3.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.201\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

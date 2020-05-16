@@ -1,0 +1,16 @@
+C:\Projects\Agrovision\spray-calculator\Services\Grains\Agrovision.Spray_Calculator.Grain\obj\Debug\netcoreapp3.1\Spray_Calculator.csprojAssemblyReference.cache
+C:\Projects\Agrovision\spray-calculator\Services\Grains\Agrovision.Spray_Calculator.Grain\obj\Debug\netcoreapp3.1\Spray_Calculator.orleans.g.args.txt
+C:\Projects\Agrovision\spray-calculator\Services\Grains\Agrovision.Spray_Calculator.Grain\obj\Debug\netcoreapp3.1\Spray_Calculator.orleans.g.cs
+C:\Projects\Agrovision\spray-calculator\Services\Grains\Agrovision.Spray_Calculator.Grain\obj\Debug\netcoreapp3.1\Spray_Calculator.csproj.CoreCompileInputs.cache
+C:\Projects\Agrovision\spray-calculator\Services\Grains\Agrovision.Spray_Calculator.Grain\obj\Debug\netcoreapp3.1\Spray_Calculator.AssemblyInfoInputs.cache
+C:\Projects\Agrovision\spray-calculator\Services\Grains\Agrovision.Spray_Calculator.Grain\obj\Debug\netcoreapp3.1\Spray_Calculator.AssemblyInfo.cs
+C:\Projects\Agrovision\spray-calculator\Services\Grains\Agrovision.Spray_Calculator.Grain\bin\Debug\netcoreapp3.1\Spray_Calculator.deps.json
+C:\Projects\Agrovision\spray-calculator\Services\Grains\Agrovision.Spray_Calculator.Grain\bin\Debug\netcoreapp3.1\Spray_Calculator.dll
+C:\Projects\Agrovision\spray-calculator\Services\Grains\Agrovision.Spray_Calculator.Grain\bin\Debug\netcoreapp3.1\ISpray_Calculator.dll
+C:\Projects\Agrovision\spray-calculator\Services\Grains\Agrovision.Spray_Calculator.Grain\bin\Debug\netcoreapp3.1\ISpray_Calculator.pdb
+C:\Projects\Agrovision\spray-calculator\Services\Grains\Agrovision.Spray_Calculator.Grain\obj\Debug\netcoreapp3.1\Spray_Calculator.csproj.CopyComplete
+C:\Projects\Agrovision\spray-calculator\Services\Grains\Agrovision.Spray_Calculator.Grain\bin\Debug\netcoreapp3.1\Spray_Calculator.pdb
+C:\Projects\Agrovision\spray-calculator\Services\Grains\Agrovision.Spray_Calculator.Grain\obj\Debug\netcoreapp3.1\Spray_Calculator.dll
+C:\Projects\Agrovision\spray-calculator\Services\Grains\Agrovision.Spray_Calculator.Grain\obj\Debug\netcoreapp3.1\Spray_Calculator.pdb
+C:\Projects\Agrovision\spray-calculator\Services\Grains\Agrovision.Spray_Calculator.Grain\bin\Debug\netcoreapp3.1\BusinessLogic.Dosage_Calculator.dll
+C:\Projects\Agrovision\spray-calculator\Services\Grains\Agrovision.Spray_Calculator.Grain\bin\Debug\netcoreapp3.1\BusinessLogic.Dosage_Calculator.pdb
