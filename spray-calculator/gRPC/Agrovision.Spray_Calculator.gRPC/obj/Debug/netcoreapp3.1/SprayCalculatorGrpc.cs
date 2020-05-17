@@ -14,6 +14,9 @@ namespace Agrovision.Spray_Calculator.gRPC.Protos {
 
     static readonly grpc::Marshaller<global::Agrovision.Spray_Calculator.gRPC.Protos.CalculateSprayRequest> __Marshaller_Spray_Calculatorproto_CalculateSprayRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Agrovision.Spray_Calculator.gRPC.Protos.CalculateSprayRequest.Parser.ParseFrom);
     static readonly grpc::Marshaller<global::Agrovision.Spray_Calculator.gRPC.Protos.CalculateSprayResponse> __Marshaller_Spray_Calculatorproto_CalculateSprayResponse = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Agrovision.Spray_Calculator.gRPC.Protos.CalculateSprayResponse.Parser.ParseFrom);
+    static readonly grpc::Marshaller<global::Agrovision.Spray_Calculator.gRPC.Protos.FieldModel> __Marshaller_Spray_Calculatorproto_FieldModel = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Agrovision.Spray_Calculator.gRPC.Protos.FieldModel.Parser.ParseFrom);
+    static readonly grpc::Marshaller<global::Agrovision.Spray_Calculator.gRPC.Protos.FieldLookup> __Marshaller_Spray_Calculatorproto_FieldLookup = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Agrovision.Spray_Calculator.gRPC.Protos.FieldLookup.Parser.ParseFrom);
+    static readonly grpc::Marshaller<global::Agrovision.Spray_Calculator.gRPC.Protos.ListFieldModel> __Marshaller_Spray_Calculatorproto_ListFieldModel = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Agrovision.Spray_Calculator.gRPC.Protos.ListFieldModel.Parser.ParseFrom);
 
     static readonly grpc::Method<global::Agrovision.Spray_Calculator.gRPC.Protos.CalculateSprayRequest, global::Agrovision.Spray_Calculator.gRPC.Protos.CalculateSprayResponse> __Method_CalculateSpray = new grpc::Method<global::Agrovision.Spray_Calculator.gRPC.Protos.CalculateSprayRequest, global::Agrovision.Spray_Calculator.gRPC.Protos.CalculateSprayResponse>(
         grpc::MethodType.Unary,
@@ -21,6 +24,20 @@ namespace Agrovision.Spray_Calculator.gRPC.Protos {
         "CalculateSpray",
         __Marshaller_Spray_Calculatorproto_CalculateSprayRequest,
         __Marshaller_Spray_Calculatorproto_CalculateSprayResponse);
+
+    static readonly grpc::Method<global::Agrovision.Spray_Calculator.gRPC.Protos.FieldModel, global::Agrovision.Spray_Calculator.gRPC.Protos.FieldModel> __Method_CreateField = new grpc::Method<global::Agrovision.Spray_Calculator.gRPC.Protos.FieldModel, global::Agrovision.Spray_Calculator.gRPC.Protos.FieldModel>(
+        grpc::MethodType.Unary,
+        __ServiceName,
+        "CreateField",
+        __Marshaller_Spray_Calculatorproto_FieldModel,
+        __Marshaller_Spray_Calculatorproto_FieldModel);
+
+    static readonly grpc::Method<global::Agrovision.Spray_Calculator.gRPC.Protos.FieldLookup, global::Agrovision.Spray_Calculator.gRPC.Protos.ListFieldModel> __Method_GetActiveFields = new grpc::Method<global::Agrovision.Spray_Calculator.gRPC.Protos.FieldLookup, global::Agrovision.Spray_Calculator.gRPC.Protos.ListFieldModel>(
+        grpc::MethodType.Unary,
+        __ServiceName,
+        "GetActiveFields",
+        __Marshaller_Spray_Calculatorproto_FieldLookup,
+        __Marshaller_Spray_Calculatorproto_ListFieldModel);
 
     /// <summary>Service descriptor</summary>
     public static global::Google.Protobuf.Reflection.ServiceDescriptor Descriptor
@@ -37,6 +54,16 @@ namespace Agrovision.Spray_Calculator.gRPC.Protos {
         throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
       }
 
+      public virtual global::System.Threading.Tasks.Task<global::Agrovision.Spray_Calculator.gRPC.Protos.FieldModel> CreateField(global::Agrovision.Spray_Calculator.gRPC.Protos.FieldModel request, grpc::ServerCallContext context)
+      {
+        throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
+      }
+
+      public virtual global::System.Threading.Tasks.Task<global::Agrovision.Spray_Calculator.gRPC.Protos.ListFieldModel> GetActiveFields(global::Agrovision.Spray_Calculator.gRPC.Protos.FieldLookup request, grpc::ServerCallContext context)
+      {
+        throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
+      }
+
     }
 
     /// <summary>Creates service definition that can be registered with a server</summary>
@@ -44,7 +71,9 @@ namespace Agrovision.Spray_Calculator.gRPC.Protos {
     public static grpc::ServerServiceDefinition BindService(Spray_CalculatorGRPCServiceBase serviceImpl)
     {
       return grpc::ServerServiceDefinition.CreateBuilder()
-          .AddMethod(__Method_CalculateSpray, serviceImpl.CalculateSpray).Build();
+          .AddMethod(__Method_CalculateSpray, serviceImpl.CalculateSpray)
+          .AddMethod(__Method_CreateField, serviceImpl.CreateField)
+          .AddMethod(__Method_GetActiveFields, serviceImpl.GetActiveFields).Build();
     }
 
     /// <summary>Register service method with a service binder with or without implementation. Useful when customizing the  service binding logic.
@@ -54,6 +83,8 @@ namespace Agrovision.Spray_Calculator.gRPC.Protos {
     public static void BindService(grpc::ServiceBinderBase serviceBinder, Spray_CalculatorGRPCServiceBase serviceImpl)
     {
       serviceBinder.AddMethod(__Method_CalculateSpray, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Agrovision.Spray_Calculator.gRPC.Protos.CalculateSprayRequest, global::Agrovision.Spray_Calculator.gRPC.Protos.CalculateSprayResponse>(serviceImpl.CalculateSpray));
+      serviceBinder.AddMethod(__Method_CreateField, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Agrovision.Spray_Calculator.gRPC.Protos.FieldModel, global::Agrovision.Spray_Calculator.gRPC.Protos.FieldModel>(serviceImpl.CreateField));
+      serviceBinder.AddMethod(__Method_GetActiveFields, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Agrovision.Spray_Calculator.gRPC.Protos.FieldLookup, global::Agrovision.Spray_Calculator.gRPC.Protos.ListFieldModel>(serviceImpl.GetActiveFields));
     }
 
   }

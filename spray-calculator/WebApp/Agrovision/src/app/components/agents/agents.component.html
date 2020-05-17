@@ -1,0 +1,11 @@
+<form [formGroup]="SprayingAgentForm">
+    <mat-form-field class="full-width-input col-lg-4">
+      <input matInput type="text" placeholder="Spraying Agent Name" formControlName="SprayingAgentName">        
+    </mat-form-field>
+    <mat-form-field class="full-width-input col-lg-4">
+      <input matInput name="SprayingAgentQty" placeholder="Spraying Agent Qty L/ha" formControlName="SprayingAgentQty" type="number" min="1">
+      <mat-error>
+        Input a valid value more then 0.
+      </mat-error>
+    </mat-form-field>
+  </form>

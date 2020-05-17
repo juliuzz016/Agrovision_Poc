@@ -1,0 +1,7 @@
+{
+  "profiles": {
+    "Spray_Calculator_NServiceBus": {
+      "commandName": "Project"
+    }
+  }
+}

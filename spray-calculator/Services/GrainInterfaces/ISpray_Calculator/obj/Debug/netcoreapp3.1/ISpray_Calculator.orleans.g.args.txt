@@ -6,7 +6,7 @@ OutputType:Library
 TargetPath:C:\Projects\Agrovision\spray-calculator\Services\GrainInterfaces\ISpray_Calculator\bin\Debug\netcoreapp3.1\ISpray_Calculator.dll
 CodeGenOutputFile:C:\Projects\Agrovision\spray-calculator\Services\GrainInterfaces\ISpray_Calculator\obj\Debug\netcoreapp3.1\ISpray_Calculator.orleans.g.cs
 Compile:C:\Projects\Agrovision\spray-calculator\Services\GrainInterfaces\ISpray_Calculator\Interfaces\IBaseGrain.cs
-Compile:C:\Projects\Agrovision\spray-calculator\Services\GrainInterfaces\ISpray_Calculator\Interfaces\IDosage_Calculator .cs
+Compile:C:\Projects\Agrovision\spray-calculator\Services\GrainInterfaces\ISpray_Calculator\Interfaces\IDosage_Calculator.cs
 Reference:C:\Program Files\dotnet\packs\Microsoft.NETCore.App.Ref\3.1.0\ref\netcoreapp3.1\Microsoft.CSharp.dll
 Reference:C:\Program Files\dotnet\packs\Microsoft.NETCore.App.Ref\3.1.0\ref\netcoreapp3.1\Microsoft.VisualBasic.Core.dll
 Reference:C:\Program Files\dotnet\packs\Microsoft.NETCore.App.Ref\3.1.0\ref\netcoreapp3.1\Microsoft.VisualBasic.dll
@@ -160,4 +160,4 @@ Reference:C:\Program Files\dotnet\packs\Microsoft.NETCore.App.Ref\3.1.0\ref\netc
 Reference:C:\Program Files\dotnet\packs\Microsoft.NETCore.App.Ref\3.1.0\ref\netcoreapp3.1\System.Xml.XPath.XDocument.dll
 Reference:C:\Program Files\dotnet\packs\Microsoft.NETCore.App.Ref\3.1.0\ref\netcoreapp3.1\WindowsBase.dll
 DefineConstants:TRACE,DEBUG,NETCOREAPP,NETCOREAPP3_1
-InputHash:b251a1412d7277066e6a64fddfc432474329814d
+InputHash:838f216b4bedd46c81179ef4b3b6ff727f4044fa

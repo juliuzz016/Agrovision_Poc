@@ -1830,6 +1830,30 @@
           "lib/netstandard1.3/System.Xml.XmlDocument.dll": {}
         }
       },
+      "Agrovision.Common.Dtos/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v3.1",
+        "compile": {
+          "bin/placeholder/Agrovision.Common.Dtos.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Agrovision.Common.Dtos.dll": {}
+        }
+      },
+      "IFieldsMaintance/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v3.1",
+        "dependencies": {
+          "Agrovision.Common.Dtos": "1.0.0",
+          "Microsoft.Orleans.Core.Abstractions": "3.1.6"
+        },
+        "compile": {
+          "bin/placeholder/IFieldsMaintance.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/IFieldsMaintance.dll": {}
+        }
+      },
       "ISpray_Calculator/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v3.1",
@@ -6334,6 +6358,16 @@
         "system.xml.xmldocument.nuspec"
       ]
     },
+    "Agrovision.Common.Dtos/1.0.0": {
+      "type": "project",
+      "path": "../../Common/Data/Agrovision.Common.Dtos/Agrovision.Common.Dtos.csproj",
+      "msbuildProject": "../../Common/Data/Agrovision.Common.Dtos/Agrovision.Common.Dtos.csproj"
+    },
+    "IFieldsMaintance/1.0.0": {
+      "type": "project",
+      "path": "../../Services/GrainInterfaces/IFieldsMaintance/IFieldsMaintance.csproj",
+      "msbuildProject": "../../Services/GrainInterfaces/IFieldsMaintance/IFieldsMaintance.csproj"
+    },
     "ISpray_Calculator/1.0.0": {
       "type": "project",
       "path": "../../Services/GrainInterfaces/ISpray_Calculator/ISpray_Calculator.csproj",
@@ -6343,6 +6377,7 @@
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v3.1": [
       "Grpc.AspNetCore >= 2.27.0",
+      "IFieldsMaintance >= 1.0.0",
       "ISpray_Calculator >= 1.0.0",
       "Microsoft.Extensions.Logging.Abstractions >= 3.1.4",
       "Microsoft.Orleans.Client >= 3.1.6"
@@ -6382,6 +6417,9 @@
       "frameworks": {
         "netcoreapp3.1": {
           "projectReferences": {
+            "C:\\Projects\\Agrovision\\spray-calculator\\Services\\GrainInterfaces\\IFieldsMaintance\\IFieldsMaintance.csproj": {
+              "projectPath": "C:\\Projects\\Agrovision\\spray-calculator\\Services\\GrainInterfaces\\IFieldsMaintance\\IFieldsMaintance.csproj"
+            },
             "C:\\Projects\\Agrovision\\spray-calculator\\Services\\GrainInterfaces\\ISpray_Calculator\\ISpray_Calculator.csproj": {
               "projectPath": "C:\\Projects\\Agrovision\\spray-calculator\\Services\\GrainInterfaces\\ISpray_Calculator\\ISpray_Calculator.csproj"
             }

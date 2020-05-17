@@ -14,7 +14,14 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\..\Data\Agrovision.Spray_Calculator.Data\Agrovision.Spray_Calculator.Data.csproj" />
     <ProjectReference Include="..\..\Services\BusinessLogic\BusinessLogic.Dosage_Calculator\Dosage_Calculator.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="appsettings.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
   </ItemGroup>
 
 </Project>

@@ -8,6 +8,7 @@
     ".NETCoreApp,Version=v3.1": {
       "Spray_Calculator_NServiceBus/1.0.0": {
         "dependencies": {
+          "IFieldsMaintance": "1.0.0",
           "Microsoft.Extensions.Hosting.Abstractions": "3.1.3",
           "Microsoft.Extensions.Logging.Abstractions": "3.1.4",
           "Microsoft.Orleans.Client": "3.1.6",
@@ -1413,6 +1414,20 @@
           "System.Threading": "4.3.0",
           "System.Xml.ReaderWriter": "4.3.0"
         }
+      },
+      "Agrovision.Common.Dtos/1.0.0": {
+        "runtime": {
+          "Agrovision.Common.Dtos.dll": {}
+        }
+      },
+      "IFieldsMaintance/1.0.0": {
+        "dependencies": {
+          "Agrovision.Common.Dtos": "1.0.0",
+          "Microsoft.Orleans.Core.Abstractions": "3.1.6"
+        },
+        "runtime": {
+          "IFieldsMaintance.dll": {}
+        }
       }
     }
   },
@@ -2415,6 +2430,16 @@
       "sha512": "sha512-lJ8AxvkX7GQxpC6GFCeBj8ThYVyQczx2+f/cWHJU8tjS7YfI6Cv6bon70jVEgs2CiFbmmM8b9j1oZVx0dSI2Ww==",
       "path": "system.xml.xmldocument/4.3.0",
       "hashPath": "system.xml.xmldocument.4.3.0.nupkg.sha512"
+    },
+    "Agrovision.Common.Dtos/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "IFieldsMaintance/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
     }
   }
 }

@@ -1,0 +1,9 @@
+﻿CREATE TABLE [dbo].[Fields]
+(
+	[Id] BIGINT NOT NULL PRIMARY KEY IDENTITY(1,1),
+	[FieldKey] UNIQUEIDENTIFIER NOT NULL,
+	[UserKey] UNIQUEIDENTIFIER NOT NULL,
+	[Description] NVARCHAR(MAX) NOT NULL,
+	[FieldSize] decimal(10,6) NOT NULL,
+	[IsActive] BIT NOT NULL 
+)

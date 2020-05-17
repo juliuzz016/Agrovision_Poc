@@ -25,6 +25,7 @@
       "Agrovision.Spray_Calculator.gRPC/1.0.0": {
         "dependencies": {
           "Grpc.AspNetCore": "2.27.0",
+          "IFieldsMaintance": "1.0.0",
           "ISpray_Calculator": "1.0.0",
           "Microsoft.Extensions.Logging.Abstractions": "3.1.4",
           "Microsoft.Orleans.Client": "3.1.6",
@@ -1416,6 +1417,26 @@
           "System.Text.Encoding": "4.3.0",
           "System.Threading": "4.3.0",
           "System.Xml.ReaderWriter": "4.3.0"
+        }
+      },
+      "Agrovision.Common.Dtos/1.0.0": {
+        "runtime": {
+          "Agrovision.Common.Dtos.dll": {}
+        },
+        "compile": {
+          "Agrovision.Common.Dtos.dll": {}
+        }
+      },
+      "IFieldsMaintance/1.0.0": {
+        "dependencies": {
+          "Agrovision.Common.Dtos": "1.0.0",
+          "Microsoft.Orleans.Core.Abstractions": "3.1.6"
+        },
+        "runtime": {
+          "IFieldsMaintance.dll": {}
+        },
+        "compile": {
+          "IFieldsMaintance.dll": {}
         }
       },
       "ISpray_Calculator/1.0.0": {
@@ -3976,6 +3997,16 @@
       "sha512": "sha512-lJ8AxvkX7GQxpC6GFCeBj8ThYVyQczx2+f/cWHJU8tjS7YfI6Cv6bon70jVEgs2CiFbmmM8b9j1oZVx0dSI2Ww==",
       "path": "system.xml.xmldocument/4.3.0",
       "hashPath": "system.xml.xmldocument.4.3.0.nupkg.sha512"
+    },
+    "Agrovision.Common.Dtos/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "IFieldsMaintance/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
     },
     "ISpray_Calculator/1.0.0": {
       "type": "project",

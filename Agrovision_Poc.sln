@@ -15,9 +15,9 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "WebApp", "WebApp", "{6200AE
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ApiGateway", "ApiGateway", "{669A85C2-1E1E-4D53-B88C-DC432955230C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Agrovision.Apigateway", "ApiGateway\Agrovision.Apigateway\Agrovision.Apigateway.csproj", "{F5C9B7C4-CBCE-4935-B251-85AE4F35FF78}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Agrovision.Apigateway", "ApiGateway\Agrovision.Apigateway\Agrovision.Apigateway.csproj", "{F5C9B7C4-CBCE-4935-B251-85AE4F35FF78}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Agrovision.Spray_Calculator.Services.Silo", "spray-calculator\Services\Silo\Agrovision.Spray_Calculator.Services.Silo\Agrovision.Spray_Calculator.Services.Silo.csproj", "{E8BE3ED2-966E-4408-8151-8203C337F3F6}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Agrovision.Spray_Calculator.Services.Silo", "spray-calculator\Services\Silo\Agrovision.Spray_Calculator.Services.Silo\Agrovision.Spray_Calculator.Services.Silo.csproj", "{E8BE3ED2-966E-4408-8151-8203C337F3F6}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Silos", "Silos", "{CABCB66A-A972-4655-A7AC-A1CF8DE9FCB8}"
 EndProject
@@ -25,25 +25,47 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Clients", "Clients", "{B4AB
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Grains", "Grains", "{1815076E-3DC8-4671-BFD9-7056921E7F1C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Spray_Calculator", "spray-calculator\Services\Grains\Agrovision.Spray_Calculator.Grain\Spray_Calculator.csproj", "{32D6BED2-8EF8-4950-BA0B-810DF496275D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Spray_Calculator", "spray-calculator\Services\Grains\Agrovision.Spray_Calculator.Grain\Spray_Calculator.csproj", "{32D6BED2-8EF8-4950-BA0B-810DF496275D}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "GrainInterfaces", "GrainInterfaces", "{F2BE106F-EB14-497D-9B24-DC2FDFCD5F8A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ISpray_Calculator", "spray-calculator\Services\GrainInterfaces\ISpray_Calculator\ISpray_Calculator.csproj", "{31885A74-8FF5-404B-A95B-9F9B7E37A31B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ISpray_Calculator", "spray-calculator\Services\GrainInterfaces\ISpray_Calculator\ISpray_Calculator.csproj", "{31885A74-8FF5-404B-A95B-9F9B7E37A31B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Spray_Calculator_NServiceBus", "spray-calculator\Services\Clients\Spray_Calculator_NServiceBus\Spray_Calculator_NServiceBus.csproj", "{5B5CE604-7105-49E4-93EA-5F2CB2DDC8CC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Spray_Calculator_NServiceBus", "spray-calculator\Services\Clients\Spray_Calculator_NServiceBus\Spray_Calculator_NServiceBus.csproj", "{5B5CE604-7105-49E4-93EA-5F2CB2DDC8CC}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "BusinessLogic", "BusinessLogic", "{03EA00C9-AFEB-4525-8936-491160068DB5}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dosage_Calculator", "spray-calculator\Services\BusinessLogic\BusinessLogic.Dosage_Calculator\Dosage_Calculator.csproj", "{68095CAB-AB0D-4DE5-8C0F-268BB676213E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Dosage_Calculator", "spray-calculator\Services\BusinessLogic\BusinessLogic.Dosage_Calculator\Dosage_Calculator.csproj", "{68095CAB-AB0D-4DE5-8C0F-268BB676213E}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "UnitTest", "UnitTest", "{FC3D0B91-1F8E-438B-A3D0-A71F6DCB7E04}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dodage_Calculator_Test", "spray-calculator\UnitTest\Dodage_Calculator_Test\Dodage_Calculator_Test.csproj", "{5E24FE4B-4786-4FD9-A0C1-A39E68E3333B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Dodage_Calculator_Test", "spray-calculator\UnitTest\Dodage_Calculator_Test\Dodage_Calculator_Test.csproj", "{5E24FE4B-4786-4FD9-A0C1-A39E68E3333B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Agrovision.Spray_Calculator.gRPC", "spray-calculator\gRPC\Agrovision.Spray_Calculator.gRPC\Agrovision.Spray_Calculator.gRPC.csproj", "{91184671-94B1-4B06-AD31-DBFEAA12526F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Agrovision.Spray_Calculator.gRPC", "spray-calculator\gRPC\Agrovision.Spray_Calculator.gRPC\Agrovision.Spray_Calculator.gRPC.csproj", "{91184671-94B1-4B06-AD31-DBFEAA12526F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Agrovision.Spray_Calculator.Api", "spray-calculator\WebApi\Agrovision.Spray_Calculator.Api\Agrovision.Spray_Calculator.Api.csproj", "{E13EC7D9-751A-4EDC-96FE-8AAC7A299047}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Agrovision.Spray_Calculator.Api", "spray-calculator\WebApi\Agrovision.Spray_Calculator.Api\Agrovision.Spray_Calculator.Api.csproj", "{E13EC7D9-751A-4EDC-96FE-8AAC7A299047}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Database", "Database", "{B5A7A803-8088-4DF9-A058-13F413AD9C6E}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Data", "Data", "{697FA5FE-6F0E-468D-A23E-FADE17C43B02}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Repository", "Repository", "{BA6EAA1B-C130-4136-8754-A4D60A4439BF}"
+EndProject
+Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "Agrovision.Database.SprayCalculator", "spray-calculator\Database\AgroVision.Database.SprayCalculator\Agrovision.Database.SprayCalculator.sqlproj", "{61CDED62-0B5B-4BA0-A801-FED52CB56CDF}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Agrovision.Spray_Calculator.Data", "spray-calculator\Data\Agrovision.Spray_Calculator.Data\Agrovision.Spray_Calculator.Data.csproj", "{0DB6AE4C-E6F7-4FD9-972A-68741FDC8939}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SprayCalculatorRepository", "spray-calculator\Repository\SprayCalculatorRepository\SprayCalculatorRepository.csproj", "{DD66519F-E8BD-40B7-95F0-2990718E2668}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FieldsMaintance", "spray-calculator\Services\Grains\FieldsMaintanceGrain\FieldsMaintance.csproj", "{E9263E3E-2C54-4FD0-9BF8-18892834B531}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Common", "Common", "{EAB72EC8-1E75-4D12-ACF5-CE2A5710557E}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Data", "Data", "{971BEA63-32CC-4FCE-9A14-A7A6B57559EB}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Agrovision.Common.Dtos", "spray-calculator\Common\Data\Agrovision.Common.Dtos\Agrovision.Common.Dtos.csproj", "{30DCBFD7-B89F-44CC-9977-70A5B000DC4E}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "IFieldsMaintance", "spray-calculator\Services\GrainInterfaces\IFieldsMaintance\IFieldsMaintance.csproj", "{0BCAAB0A-CEDF-4BCF-84DD-C5889C2DF448}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -87,6 +109,32 @@ Global
 		{E13EC7D9-751A-4EDC-96FE-8AAC7A299047}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E13EC7D9-751A-4EDC-96FE-8AAC7A299047}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E13EC7D9-751A-4EDC-96FE-8AAC7A299047}.Release|Any CPU.Build.0 = Release|Any CPU
+		{61CDED62-0B5B-4BA0-A801-FED52CB56CDF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{61CDED62-0B5B-4BA0-A801-FED52CB56CDF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{61CDED62-0B5B-4BA0-A801-FED52CB56CDF}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{61CDED62-0B5B-4BA0-A801-FED52CB56CDF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{61CDED62-0B5B-4BA0-A801-FED52CB56CDF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{61CDED62-0B5B-4BA0-A801-FED52CB56CDF}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{0DB6AE4C-E6F7-4FD9-972A-68741FDC8939}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0DB6AE4C-E6F7-4FD9-972A-68741FDC8939}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0DB6AE4C-E6F7-4FD9-972A-68741FDC8939}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0DB6AE4C-E6F7-4FD9-972A-68741FDC8939}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DD66519F-E8BD-40B7-95F0-2990718E2668}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DD66519F-E8BD-40B7-95F0-2990718E2668}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DD66519F-E8BD-40B7-95F0-2990718E2668}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DD66519F-E8BD-40B7-95F0-2990718E2668}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E9263E3E-2C54-4FD0-9BF8-18892834B531}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E9263E3E-2C54-4FD0-9BF8-18892834B531}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E9263E3E-2C54-4FD0-9BF8-18892834B531}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E9263E3E-2C54-4FD0-9BF8-18892834B531}.Release|Any CPU.Build.0 = Release|Any CPU
+		{30DCBFD7-B89F-44CC-9977-70A5B000DC4E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{30DCBFD7-B89F-44CC-9977-70A5B000DC4E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{30DCBFD7-B89F-44CC-9977-70A5B000DC4E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{30DCBFD7-B89F-44CC-9977-70A5B000DC4E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0BCAAB0A-CEDF-4BCF-84DD-C5889C2DF448}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0BCAAB0A-CEDF-4BCF-84DD-C5889C2DF448}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0BCAAB0A-CEDF-4BCF-84DD-C5889C2DF448}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0BCAAB0A-CEDF-4BCF-84DD-C5889C2DF448}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -111,6 +159,17 @@ Global
 		{5E24FE4B-4786-4FD9-A0C1-A39E68E3333B} = {FC3D0B91-1F8E-438B-A3D0-A71F6DCB7E04}
 		{91184671-94B1-4B06-AD31-DBFEAA12526F} = {CBD30B92-122C-44FB-8F96-35AB384F6E6B}
 		{E13EC7D9-751A-4EDC-96FE-8AAC7A299047} = {8CA64AC1-8B65-43E6-9BF9-0041DB2FA64A}
+		{B5A7A803-8088-4DF9-A058-13F413AD9C6E} = {EE272903-0476-4B40-9E5A-949573FA5B75}
+		{697FA5FE-6F0E-468D-A23E-FADE17C43B02} = {EE272903-0476-4B40-9E5A-949573FA5B75}
+		{BA6EAA1B-C130-4136-8754-A4D60A4439BF} = {EE272903-0476-4B40-9E5A-949573FA5B75}
+		{61CDED62-0B5B-4BA0-A801-FED52CB56CDF} = {B5A7A803-8088-4DF9-A058-13F413AD9C6E}
+		{0DB6AE4C-E6F7-4FD9-972A-68741FDC8939} = {697FA5FE-6F0E-468D-A23E-FADE17C43B02}
+		{DD66519F-E8BD-40B7-95F0-2990718E2668} = {BA6EAA1B-C130-4136-8754-A4D60A4439BF}
+		{E9263E3E-2C54-4FD0-9BF8-18892834B531} = {1815076E-3DC8-4671-BFD9-7056921E7F1C}
+		{EAB72EC8-1E75-4D12-ACF5-CE2A5710557E} = {EE272903-0476-4B40-9E5A-949573FA5B75}
+		{971BEA63-32CC-4FCE-9A14-A7A6B57559EB} = {EAB72EC8-1E75-4D12-ACF5-CE2A5710557E}
+		{30DCBFD7-B89F-44CC-9977-70A5B000DC4E} = {971BEA63-32CC-4FCE-9A14-A7A6B57559EB}
+		{0BCAAB0A-CEDF-4BCF-84DD-C5889C2DF448} = {F2BE106F-EB14-497D-9B24-DC2FDFCD5F8A}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {FC8DB186-F6AF-4E10-B13E-85DFE48939AE}

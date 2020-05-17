@@ -6,6 +6,8 @@ package Spray_Calculatorproto;
 
 service Spray_CalculatorGRPCService {
  rpc CalculateSpray (CalculateSprayRequest) returns (CalculateSprayResponse);
+  rpc CreateField (FieldModel) returns (FieldModel);
+ rpc GetActiveFields (FieldLookup) returns (ListFieldModel);
 }
 
 message CalculateSprayRequest {
@@ -16,4 +18,20 @@ message CalculateSprayRequest {
 message CalculateSprayResponse {
  double agentValue =1;
  double waterValue =2;
+}
+
+message FieldModel {
+ int64 Id = 1;
+ string FieldKey = 2;
+ string UserKey = 3;
+ string Description = 4;
+ double FieldSize =5;
+ bool IsActive = 6;
+}
+message ListFieldModel {
+ repeated FieldModel FieldList = 1;
+}
+message FieldLookup {
+ int32 page = 1;
+ int32 pageSize = 2;
 }

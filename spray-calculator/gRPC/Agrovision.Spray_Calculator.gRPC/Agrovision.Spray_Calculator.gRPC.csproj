@@ -15,6 +15,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\..\Services\GrainInterfaces\IFieldsMaintance\IFieldsMaintance.csproj" />
     <ProjectReference Include="..\..\Services\GrainInterfaces\ISpray_Calculator\ISpray_Calculator.csproj" />
   </ItemGroup>
 

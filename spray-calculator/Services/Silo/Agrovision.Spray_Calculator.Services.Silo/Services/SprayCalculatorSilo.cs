@@ -1,4 +1,5 @@
-﻿using BusinessLogic.Dosage_Calculator.Interfaces;
+﻿using Agrovision.Spray_Calculator.Data;
+using BusinessLogic.Dosage_Calculator.Interfaces;
 using BusinessLogic.Dosage_Calculator.Services;
 using ISpray_Calculator.Interfaces;
 using Microsoft.Extensions.DependencyInjection;
@@ -8,6 +9,7 @@ using Orleans;
 using Orleans.Configuration;
 using Orleans.Hosting;
 using Spray_Calculator;
+using SprayCalculatorRepository.RepositoryImplementations;
 using System;
 using System.Net;
 using System.Threading;
@@ -20,7 +22,7 @@ namespace Agrovision.Spray_Calculator.Services.Silo.Services
         public ISiloHost _siloHost;
         public void Dispose()
         {
-           
+
         }
 
         public async Task StartAsync(CancellationToken cancellationToken)
@@ -39,9 +41,12 @@ namespace Agrovision.Spray_Calculator.Services.Silo.Services
                     options.GatewayPort = 30000;
                 })
                 .ConfigureLogging(logging => logging.AddConsole())
-                .ConfigureApplicationParts(parts => { 
+                .ConfigureApplicationParts(parts =>
+                {
                     parts.AddApplicationPart(typeof(BaseGrain).Assembly).WithReferences();
+                    parts.AddApplicationPart(typeof(FieldsMaintance.FieldsMaintanceGrain).Assembly).WithReferences();
                     parts.AddApplicationPart(typeof(IDosage_CalculatorGrain).Assembly).WithReferences();
+
                 })
                 .UseDashboard(options =>
                 {
@@ -54,6 +59,11 @@ namespace Agrovision.Spray_Calculator.Services.Silo.Services
 
                 }).ConfigureServices(services =>
                 {
+                    services.AddTransient<SprayCalculatorContext>();
+
+                    services.AddTransient<FieldsRepository>();
+
+
                     services.AddTransient<IDosage_CalculatorBL, Dosage_Calculator>();
 
                 });

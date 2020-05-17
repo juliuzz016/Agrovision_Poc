@@ -28,16 +28,29 @@ namespace Agrovision.Spray_Calculator.gRPC.Protos {
             "YXRvcnByb3RvIk8KFUNhbGN1bGF0ZVNwcmF5UmVxdWVzdBIQCghhZ2VudFJl",
             "cRgBIAEoARIRCglmaWVsZFNpemUYAiABKAESEQoJd2F0ZXJSYXRlGAMgASgB",
             "IkAKFkNhbGN1bGF0ZVNwcmF5UmVzcG9uc2USEgoKYWdlbnRWYWx1ZRgBIAEo",
-            "ARISCgp3YXRlclZhbHVlGAIgASgBMowBChtTcHJheV9DYWxjdWxhdG9yR1JQ",
-            "Q1NlcnZpY2USbQoOQ2FsY3VsYXRlU3ByYXkSLC5TcHJheV9DYWxjdWxhdG9y",
-            "cHJvdG8uQ2FsY3VsYXRlU3ByYXlSZXF1ZXN0Gi0uU3ByYXlfQ2FsY3VsYXRv",
-            "cnByb3RvLkNhbGN1bGF0ZVNwcmF5UmVzcG9uc2VCKqoCJ0Fncm92aXNpb24u",
-            "U3ByYXlfQ2FsY3VsYXRvci5nUlBDLlByb3Rvc2IGcHJvdG8z"));
+            "ARISCgp3YXRlclZhbHVlGAIgASgBInUKCkZpZWxkTW9kZWwSCgoCSWQYASAB",
+            "KAMSEAoIRmllbGRLZXkYAiABKAkSDwoHVXNlcktleRgDIAEoCRITCgtEZXNj",
+            "cmlwdGlvbhgEIAEoCRIRCglGaWVsZFNpemUYBSABKAESEAoISXNBY3RpdmUY",
+            "BiABKAgiRgoOTGlzdEZpZWxkTW9kZWwSNAoJRmllbGRMaXN0GAEgAygLMiEu",
+            "U3ByYXlfQ2FsY3VsYXRvcnByb3RvLkZpZWxkTW9kZWwiLQoLRmllbGRMb29r",
+            "dXASDAoEcGFnZRgBIAEoBRIQCghwYWdlU2l6ZRgCIAEoBTK/AgobU3ByYXlf",
+            "Q2FsY3VsYXRvckdSUENTZXJ2aWNlEm0KDkNhbGN1bGF0ZVNwcmF5EiwuU3By",
+            "YXlfQ2FsY3VsYXRvcnByb3RvLkNhbGN1bGF0ZVNwcmF5UmVxdWVzdBotLlNw",
+            "cmF5X0NhbGN1bGF0b3Jwcm90by5DYWxjdWxhdGVTcHJheVJlc3BvbnNlElMK",
+            "C0NyZWF0ZUZpZWxkEiEuU3ByYXlfQ2FsY3VsYXRvcnByb3RvLkZpZWxkTW9k",
+            "ZWwaIS5TcHJheV9DYWxjdWxhdG9ycHJvdG8uRmllbGRNb2RlbBJcCg9HZXRB",
+            "Y3RpdmVGaWVsZHMSIi5TcHJheV9DYWxjdWxhdG9ycHJvdG8uRmllbGRMb29r",
+            "dXAaJS5TcHJheV9DYWxjdWxhdG9ycHJvdG8uTGlzdEZpZWxkTW9kZWxCKqoC",
+            "J0Fncm92aXNpb24uU3ByYXlfQ2FsY3VsYXRvci5nUlBDLlByb3Rvc2IGcHJv",
+            "dG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
             new pbr::GeneratedClrTypeInfo(typeof(global::Agrovision.Spray_Calculator.gRPC.Protos.CalculateSprayRequest), global::Agrovision.Spray_Calculator.gRPC.Protos.CalculateSprayRequest.Parser, new[]{ "AgentReq", "FieldSize", "WaterRate" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Agrovision.Spray_Calculator.gRPC.Protos.CalculateSprayResponse), global::Agrovision.Spray_Calculator.gRPC.Protos.CalculateSprayResponse.Parser, new[]{ "AgentValue", "WaterValue" }, null, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::Agrovision.Spray_Calculator.gRPC.Protos.CalculateSprayResponse), global::Agrovision.Spray_Calculator.gRPC.Protos.CalculateSprayResponse.Parser, new[]{ "AgentValue", "WaterValue" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Agrovision.Spray_Calculator.gRPC.Protos.FieldModel), global::Agrovision.Spray_Calculator.gRPC.Protos.FieldModel.Parser, new[]{ "Id", "FieldKey", "UserKey", "Description", "FieldSize", "IsActive" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Agrovision.Spray_Calculator.gRPC.Protos.ListFieldModel), global::Agrovision.Spray_Calculator.gRPC.Protos.ListFieldModel.Parser, new[]{ "FieldList" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Agrovision.Spray_Calculator.gRPC.Protos.FieldLookup), global::Agrovision.Spray_Calculator.gRPC.Protos.FieldLookup.Parser, new[]{ "Page", "PageSize" }, null, null, null, null)
           }));
     }
     #endregion
@@ -378,6 +391,553 @@ namespace Agrovision.Spray_Calculator.gRPC.Protos {
           }
           case 17: {
             WaterValue = input.ReadDouble();
+            break;
+          }
+        }
+      }
+    }
+
+  }
+
+  public sealed partial class FieldModel : pb::IMessage<FieldModel> {
+    private static readonly pb::MessageParser<FieldModel> _parser = new pb::MessageParser<FieldModel>(() => new FieldModel());
+    private pb::UnknownFieldSet _unknownFields;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pb::MessageParser<FieldModel> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::Agrovision.Spray_Calculator.gRPC.Protos.SprayCalculatorReflection.Descriptor.MessageTypes[2]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public FieldModel() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public FieldModel(FieldModel other) : this() {
+      id_ = other.id_;
+      fieldKey_ = other.fieldKey_;
+      userKey_ = other.userKey_;
+      description_ = other.description_;
+      fieldSize_ = other.fieldSize_;
+      isActive_ = other.isActive_;
+      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public FieldModel Clone() {
+      return new FieldModel(this);
+    }
+
+    /// <summary>Field number for the "Id" field.</summary>
+    public const int IdFieldNumber = 1;
+    private long id_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public long Id {
+      get { return id_; }
+      set {
+        id_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "FieldKey" field.</summary>
+    public const int FieldKeyFieldNumber = 2;
+    private string fieldKey_ = "";
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public string FieldKey {
+      get { return fieldKey_; }
+      set {
+        fieldKey_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+
+    /// <summary>Field number for the "UserKey" field.</summary>
+    public const int UserKeyFieldNumber = 3;
+    private string userKey_ = "";
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public string UserKey {
+      get { return userKey_; }
+      set {
+        userKey_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+
+    /// <summary>Field number for the "Description" field.</summary>
+    public const int DescriptionFieldNumber = 4;
+    private string description_ = "";
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public string Description {
+      get { return description_; }
+      set {
+        description_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+
+    /// <summary>Field number for the "FieldSize" field.</summary>
+    public const int FieldSizeFieldNumber = 5;
+    private double fieldSize_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public double FieldSize {
+      get { return fieldSize_; }
+      set {
+        fieldSize_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "IsActive" field.</summary>
+    public const int IsActiveFieldNumber = 6;
+    private bool isActive_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public bool IsActive {
+      get { return isActive_; }
+      set {
+        isActive_ = value;
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override bool Equals(object other) {
+      return Equals(other as FieldModel);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public bool Equals(FieldModel other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      if (Id != other.Id) return false;
+      if (FieldKey != other.FieldKey) return false;
+      if (UserKey != other.UserKey) return false;
+      if (Description != other.Description) return false;
+      if (!pbc::ProtobufEqualityComparers.BitwiseDoubleEqualityComparer.Equals(FieldSize, other.FieldSize)) return false;
+      if (IsActive != other.IsActive) return false;
+      return Equals(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override int GetHashCode() {
+      int hash = 1;
+      if (Id != 0L) hash ^= Id.GetHashCode();
+      if (FieldKey.Length != 0) hash ^= FieldKey.GetHashCode();
+      if (UserKey.Length != 0) hash ^= UserKey.GetHashCode();
+      if (Description.Length != 0) hash ^= Description.GetHashCode();
+      if (FieldSize != 0D) hash ^= pbc::ProtobufEqualityComparers.BitwiseDoubleEqualityComparer.GetHashCode(FieldSize);
+      if (IsActive != false) hash ^= IsActive.GetHashCode();
+      if (_unknownFields != null) {
+        hash ^= _unknownFields.GetHashCode();
+      }
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void WriteTo(pb::CodedOutputStream output) {
+      if (Id != 0L) {
+        output.WriteRawTag(8);
+        output.WriteInt64(Id);
+      }
+      if (FieldKey.Length != 0) {
+        output.WriteRawTag(18);
+        output.WriteString(FieldKey);
+      }
+      if (UserKey.Length != 0) {
+        output.WriteRawTag(26);
+        output.WriteString(UserKey);
+      }
+      if (Description.Length != 0) {
+        output.WriteRawTag(34);
+        output.WriteString(Description);
+      }
+      if (FieldSize != 0D) {
+        output.WriteRawTag(41);
+        output.WriteDouble(FieldSize);
+      }
+      if (IsActive != false) {
+        output.WriteRawTag(48);
+        output.WriteBool(IsActive);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(output);
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public int CalculateSize() {
+      int size = 0;
+      if (Id != 0L) {
+        size += 1 + pb::CodedOutputStream.ComputeInt64Size(Id);
+      }
+      if (FieldKey.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(FieldKey);
+      }
+      if (UserKey.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(UserKey);
+      }
+      if (Description.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(Description);
+      }
+      if (FieldSize != 0D) {
+        size += 1 + 8;
+      }
+      if (IsActive != false) {
+        size += 1 + 1;
+      }
+      if (_unknownFields != null) {
+        size += _unknownFields.CalculateSize();
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(FieldModel other) {
+      if (other == null) {
+        return;
+      }
+      if (other.Id != 0L) {
+        Id = other.Id;
+      }
+      if (other.FieldKey.Length != 0) {
+        FieldKey = other.FieldKey;
+      }
+      if (other.UserKey.Length != 0) {
+        UserKey = other.UserKey;
+      }
+      if (other.Description.Length != 0) {
+        Description = other.Description;
+      }
+      if (other.FieldSize != 0D) {
+        FieldSize = other.FieldSize;
+      }
+      if (other.IsActive != false) {
+        IsActive = other.IsActive;
+      }
+      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(pb::CodedInputStream input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+            break;
+          case 8: {
+            Id = input.ReadInt64();
+            break;
+          }
+          case 18: {
+            FieldKey = input.ReadString();
+            break;
+          }
+          case 26: {
+            UserKey = input.ReadString();
+            break;
+          }
+          case 34: {
+            Description = input.ReadString();
+            break;
+          }
+          case 41: {
+            FieldSize = input.ReadDouble();
+            break;
+          }
+          case 48: {
+            IsActive = input.ReadBool();
+            break;
+          }
+        }
+      }
+    }
+
+  }
+
+  public sealed partial class ListFieldModel : pb::IMessage<ListFieldModel> {
+    private static readonly pb::MessageParser<ListFieldModel> _parser = new pb::MessageParser<ListFieldModel>(() => new ListFieldModel());
+    private pb::UnknownFieldSet _unknownFields;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pb::MessageParser<ListFieldModel> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::Agrovision.Spray_Calculator.gRPC.Protos.SprayCalculatorReflection.Descriptor.MessageTypes[3]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public ListFieldModel() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public ListFieldModel(ListFieldModel other) : this() {
+      fieldList_ = other.fieldList_.Clone();
+      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public ListFieldModel Clone() {
+      return new ListFieldModel(this);
+    }
+
+    /// <summary>Field number for the "FieldList" field.</summary>
+    public const int FieldListFieldNumber = 1;
+    private static readonly pb::FieldCodec<global::Agrovision.Spray_Calculator.gRPC.Protos.FieldModel> _repeated_fieldList_codec
+        = pb::FieldCodec.ForMessage(10, global::Agrovision.Spray_Calculator.gRPC.Protos.FieldModel.Parser);
+    private readonly pbc::RepeatedField<global::Agrovision.Spray_Calculator.gRPC.Protos.FieldModel> fieldList_ = new pbc::RepeatedField<global::Agrovision.Spray_Calculator.gRPC.Protos.FieldModel>();
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public pbc::RepeatedField<global::Agrovision.Spray_Calculator.gRPC.Protos.FieldModel> FieldList {
+      get { return fieldList_; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override bool Equals(object other) {
+      return Equals(other as ListFieldModel);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public bool Equals(ListFieldModel other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      if(!fieldList_.Equals(other.fieldList_)) return false;
+      return Equals(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override int GetHashCode() {
+      int hash = 1;
+      hash ^= fieldList_.GetHashCode();
+      if (_unknownFields != null) {
+        hash ^= _unknownFields.GetHashCode();
+      }
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void WriteTo(pb::CodedOutputStream output) {
+      fieldList_.WriteTo(output, _repeated_fieldList_codec);
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(output);
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public int CalculateSize() {
+      int size = 0;
+      size += fieldList_.CalculateSize(_repeated_fieldList_codec);
+      if (_unknownFields != null) {
+        size += _unknownFields.CalculateSize();
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(ListFieldModel other) {
+      if (other == null) {
+        return;
+      }
+      fieldList_.Add(other.fieldList_);
+      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(pb::CodedInputStream input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+            break;
+          case 10: {
+            fieldList_.AddEntriesFrom(input, _repeated_fieldList_codec);
+            break;
+          }
+        }
+      }
+    }
+
+  }
+
+  public sealed partial class FieldLookup : pb::IMessage<FieldLookup> {
+    private static readonly pb::MessageParser<FieldLookup> _parser = new pb::MessageParser<FieldLookup>(() => new FieldLookup());
+    private pb::UnknownFieldSet _unknownFields;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pb::MessageParser<FieldLookup> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::Agrovision.Spray_Calculator.gRPC.Protos.SprayCalculatorReflection.Descriptor.MessageTypes[4]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public FieldLookup() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public FieldLookup(FieldLookup other) : this() {
+      page_ = other.page_;
+      pageSize_ = other.pageSize_;
+      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public FieldLookup Clone() {
+      return new FieldLookup(this);
+    }
+
+    /// <summary>Field number for the "page" field.</summary>
+    public const int PageFieldNumber = 1;
+    private int page_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public int Page {
+      get { return page_; }
+      set {
+        page_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "pageSize" field.</summary>
+    public const int PageSizeFieldNumber = 2;
+    private int pageSize_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public int PageSize {
+      get { return pageSize_; }
+      set {
+        pageSize_ = value;
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override bool Equals(object other) {
+      return Equals(other as FieldLookup);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public bool Equals(FieldLookup other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      if (Page != other.Page) return false;
+      if (PageSize != other.PageSize) return false;
+      return Equals(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override int GetHashCode() {
+      int hash = 1;
+      if (Page != 0) hash ^= Page.GetHashCode();
+      if (PageSize != 0) hash ^= PageSize.GetHashCode();
+      if (_unknownFields != null) {
+        hash ^= _unknownFields.GetHashCode();
+      }
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void WriteTo(pb::CodedOutputStream output) {
+      if (Page != 0) {
+        output.WriteRawTag(8);
+        output.WriteInt32(Page);
+      }
+      if (PageSize != 0) {
+        output.WriteRawTag(16);
+        output.WriteInt32(PageSize);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(output);
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public int CalculateSize() {
+      int size = 0;
+      if (Page != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeInt32Size(Page);
+      }
+      if (PageSize != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeInt32Size(PageSize);
+      }
+      if (_unknownFields != null) {
+        size += _unknownFields.CalculateSize();
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(FieldLookup other) {
+      if (other == null) {
+        return;
+      }
+      if (other.Page != 0) {
+        Page = other.Page;
+      }
+      if (other.PageSize != 0) {
+        PageSize = other.PageSize;
+      }
+      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(pb::CodedInputStream input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+            break;
+          case 8: {
+            Page = input.ReadInt32();
+            break;
+          }
+          case 16: {
+            PageSize = input.ReadInt32();
             break;
           }
         }

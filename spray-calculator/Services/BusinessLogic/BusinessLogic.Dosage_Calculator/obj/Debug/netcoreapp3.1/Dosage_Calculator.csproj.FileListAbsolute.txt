@@ -1,8 +1,9 @@
 C:\Projects\Agrovision\spray-calculator\Services\BusinessLogic\BusinessLogic.Dosage_Calculator\bin\Debug\netcoreapp3.1\BusinessLogic.Dosage_Calculator.deps.json
 C:\Projects\Agrovision\spray-calculator\Services\BusinessLogic\BusinessLogic.Dosage_Calculator\bin\Debug\netcoreapp3.1\BusinessLogic.Dosage_Calculator.dll
-C:\Projects\Agrovision\spray-calculator\Services\BusinessLogic\BusinessLogic.Dosage_Calculator\obj\Debug\netcoreapp3.1\Dosage_Calculator.AssemblyInfoInputs.cache
-C:\Projects\Agrovision\spray-calculator\Services\BusinessLogic\BusinessLogic.Dosage_Calculator\obj\Debug\netcoreapp3.1\Dosage_Calculator.AssemblyInfo.cs
 C:\Projects\Agrovision\spray-calculator\Services\BusinessLogic\BusinessLogic.Dosage_Calculator\bin\Debug\netcoreapp3.1\BusinessLogic.Dosage_Calculator.pdb
 C:\Projects\Agrovision\spray-calculator\Services\BusinessLogic\BusinessLogic.Dosage_Calculator\obj\Debug\netcoreapp3.1\Dosage_Calculator.csproj.CoreCompileInputs.cache
+C:\Projects\Agrovision\spray-calculator\Services\BusinessLogic\BusinessLogic.Dosage_Calculator\obj\Debug\netcoreapp3.1\Dosage_Calculator.AssemblyInfoInputs.cache
+C:\Projects\Agrovision\spray-calculator\Services\BusinessLogic\BusinessLogic.Dosage_Calculator\obj\Debug\netcoreapp3.1\Dosage_Calculator.AssemblyInfo.cs
 C:\Projects\Agrovision\spray-calculator\Services\BusinessLogic\BusinessLogic.Dosage_Calculator\obj\Debug\netcoreapp3.1\BusinessLogic.Dosage_Calculator.dll
 C:\Projects\Agrovision\spray-calculator\Services\BusinessLogic\BusinessLogic.Dosage_Calculator\obj\Debug\netcoreapp3.1\BusinessLogic.Dosage_Calculator.pdb
+C:\Projects\Agrovision\spray-calculator\Services\BusinessLogic\BusinessLogic.Dosage_Calculator\obj\Debug\netcoreapp3.1\Dosage_Calculator.csprojAssemblyReference.cache

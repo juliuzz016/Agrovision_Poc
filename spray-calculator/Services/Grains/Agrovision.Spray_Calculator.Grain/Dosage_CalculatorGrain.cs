@@ -12,7 +12,7 @@ namespace Spray_Calculator
         {
             _dosage_Calculator = dosage_Calculator;
         }
-        public async Task<(double water, double agent)> CalculateDosage(double agentReq, double fieldSize, double waterRate)
+        public async Task<(double agent , double water)> CalculateDosage(double agentReq, double fieldSize, double waterRate)
         {
             return await _dosage_Calculator.CalculateAgent(agentReq, fieldSize, waterRate);
         }

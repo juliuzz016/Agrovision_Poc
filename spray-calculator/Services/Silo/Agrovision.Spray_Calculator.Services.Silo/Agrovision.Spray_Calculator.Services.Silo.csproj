@@ -1,4 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <OutputType>Exe</OutputType>
@@ -8,13 +8,21 @@
   <ItemGroup>
     <PackageReference Include="Microsoft.Extensions.Hosting" Version="3.1.3" />
     <PackageReference Include="Microsoft.Extensions.Hosting.Abstractions" Version="3.1.3" />
-    <PackageReference Include="Microsoft.Extensions.Logging" Version="3.1.3" />
     <PackageReference Include="Microsoft.Orleans.Server" Version="3.1.6" />
     <PackageReference Include="OrleansDashboard" Version="3.1.0" />
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\..\..\Data\Agrovision.Spray_Calculator.Data\Agrovision.Spray_Calculator.Data.csproj" />
+    <ProjectReference Include="..\..\..\Repository\SprayCalculatorRepository\SprayCalculatorRepository.csproj" />
     <ProjectReference Include="..\..\Grains\Agrovision.Spray_Calculator.Grain\Spray_Calculator.csproj" />
+    <ProjectReference Include="..\..\Grains\FieldsMaintanceGrain\FieldsMaintance.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="appsettings.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
   </ItemGroup>
 
 </Project>

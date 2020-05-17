@@ -1,0 +1,9 @@
+C:\Projects\Agrovision\spray-calculator\Common\Data\Agrovision.Common.Dtos\bin\Debug\netcoreapp3.1\Agrovision.Common.Dtos.deps.json
+C:\Projects\Agrovision\spray-calculator\Common\Data\Agrovision.Common.Dtos\bin\Debug\netcoreapp3.1\Agrovision.Common.Dtos.dll
+C:\Projects\Agrovision\spray-calculator\Common\Data\Agrovision.Common.Dtos\bin\Debug\netcoreapp3.1\Agrovision.Common.Dtos.pdb
+C:\Projects\Agrovision\spray-calculator\Common\Data\Agrovision.Common.Dtos\obj\Debug\netcoreapp3.1\Agrovision.Common.Dtos.csproj.CoreCompileInputs.cache
+C:\Projects\Agrovision\spray-calculator\Common\Data\Agrovision.Common.Dtos\obj\Debug\netcoreapp3.1\Agrovision.Common.Dtos.AssemblyInfoInputs.cache
+C:\Projects\Agrovision\spray-calculator\Common\Data\Agrovision.Common.Dtos\obj\Debug\netcoreapp3.1\Agrovision.Common.Dtos.AssemblyInfo.cs
+C:\Projects\Agrovision\spray-calculator\Common\Data\Agrovision.Common.Dtos\obj\Debug\netcoreapp3.1\Agrovision.Common.Dtos.dll
+C:\Projects\Agrovision\spray-calculator\Common\Data\Agrovision.Common.Dtos\obj\Debug\netcoreapp3.1\Agrovision.Common.Dtos.pdb
+C:\Projects\Agrovision\spray-calculator\Common\Data\Agrovision.Common.Dtos\obj\Debug\netcoreapp3.1\Agrovision.Common.Dtos.csprojAssemblyReference.cache

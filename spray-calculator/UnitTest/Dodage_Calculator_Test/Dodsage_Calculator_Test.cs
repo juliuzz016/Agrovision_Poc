@@ -1,3 +1,4 @@
+using Agrovision.Spray_Calculator.Data;
 using BusinessLogic.Dosage_Calculator.Services;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -30,6 +31,13 @@ namespace Dodage_Calculator_Test
                 Assert.True(fieldRes.agent == z.agentOutcome && fieldRes.water == z.waterOutcome);
             });
             await Task.CompletedTask;
+        }
+        [Fact, Description("Test Spray Calculator DB")]
+        public async Task TestSprayCalculatorDB()
+        {
+            using var _context = new SprayCalculatorContext();
+             Assert.True(await _context.Database.CanConnectAsync());
+          
         }
     }
 }
