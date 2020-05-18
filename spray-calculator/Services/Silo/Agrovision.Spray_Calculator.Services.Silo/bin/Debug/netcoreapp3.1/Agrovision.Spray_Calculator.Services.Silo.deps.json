@@ -15,7 +15,9 @@
           "Microsoft.Orleans.Server": "3.1.6",
           "OrleansDashboard": "3.1.0",
           "SprayCalculatorRepository": "1.0.0",
-          "Spray_Calculator": "1.0.0"
+          "Spray_Calculator": "1.0.0",
+          "SprayerMaintance": "1.0.0",
+          "SprayingAgentMaintance": "1.0.0"
         },
         "runtime": {
           "Agrovision.Spray_Calculator.Services.Silo.dll": {}
@@ -1601,6 +1603,24 @@
           "IFieldsMaintance.dll": {}
         }
       },
+      "ISprayingAgentMaintance/1.0.0": {
+        "dependencies": {
+          "Agrovision.Common.Dtos": "1.0.0",
+          "Microsoft.Orleans.Core.Abstractions": "3.1.6"
+        },
+        "runtime": {
+          "ISprayingAgentMaintance.dll": {}
+        }
+      },
+      "ISprayMaintance/1.0.0": {
+        "dependencies": {
+          "Agrovision.Common.Dtos": "1.0.0",
+          "Microsoft.Orleans.Core.Abstractions": "3.1.6"
+        },
+        "runtime": {
+          "ISprayMaintance.dll": {}
+        }
+      },
       "ISpray_Calculator/1.0.0": {
         "dependencies": {
           "Microsoft.Orleans.Core.Abstractions": "3.1.6"
@@ -1615,6 +1635,28 @@
         },
         "runtime": {
           "SprayCalculatorRepository.dll": {}
+        }
+      },
+      "SprayerMaintance/1.0.0": {
+        "dependencies": {
+          "Agrovision.Common.Dtos": "1.0.0",
+          "ISprayMaintance": "1.0.0",
+          "Microsoft.Orleans.Core.Abstractions": "3.1.6",
+          "SprayCalculatorRepository": "1.0.0"
+        },
+        "runtime": {
+          "SprayerMaintance.dll": {}
+        }
+      },
+      "SprayingAgentMaintance/1.0.0": {
+        "dependencies": {
+          "Agrovision.Common.Dtos": "1.0.0",
+          "ISprayingAgentMaintance": "1.0.0",
+          "Microsoft.Orleans.Core.Abstractions": "3.1.6",
+          "SprayCalculatorRepository": "1.0.0"
+        },
+        "runtime": {
+          "SprayingAgentMaintance.dll": {}
         }
       },
       "Spray_Calculator/1.0.0": {
@@ -2766,12 +2808,32 @@
       "serviceable": false,
       "sha512": ""
     },
+    "ISprayingAgentMaintance/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "ISprayMaintance/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
     "ISpray_Calculator/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""
     },
     "SprayCalculatorRepository/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "SprayerMaintance/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "SprayingAgentMaintance/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

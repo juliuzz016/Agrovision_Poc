@@ -1,2 +1,7 @@
-export class Agent.Model {
+export class AgentModel {
+    id: bigint;
+    agentKey: string;
+    description: string;
+    recomendedDosage: number;
+
 }

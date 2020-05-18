@@ -17,6 +17,8 @@
     <ProjectReference Include="..\..\..\Repository\SprayCalculatorRepository\SprayCalculatorRepository.csproj" />
     <ProjectReference Include="..\..\Grains\Agrovision.Spray_Calculator.Grain\Spray_Calculator.csproj" />
     <ProjectReference Include="..\..\Grains\FieldsMaintanceGrain\FieldsMaintance.csproj" />
+    <ProjectReference Include="..\..\Grains\SprayerMaintance\SprayerMaintance.csproj" />
+    <ProjectReference Include="..\..\Grains\SprayingAgentMaintance\SprayingAgentMaintance.csproj" />
   </ItemGroup>
 
   <ItemGroup>

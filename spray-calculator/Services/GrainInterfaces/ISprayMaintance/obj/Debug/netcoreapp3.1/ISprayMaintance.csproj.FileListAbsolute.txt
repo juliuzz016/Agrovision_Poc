@@ -1,0 +1,14 @@
+C:\Projects\Agrovision\spray-calculator\Services\GrainInterfaces\ISprayMaintance\bin\Debug\netcoreapp3.1\ISprayMaintance.deps.json
+C:\Projects\Agrovision\spray-calculator\Services\GrainInterfaces\ISprayMaintance\bin\Debug\netcoreapp3.1\ISprayMaintance.dll
+C:\Projects\Agrovision\spray-calculator\Services\GrainInterfaces\ISprayMaintance\obj\Debug\netcoreapp3.1\ISprayMaintance.csprojAssemblyReference.cache
+C:\Projects\Agrovision\spray-calculator\Services\GrainInterfaces\ISprayMaintance\obj\Debug\netcoreapp3.1\ISprayMaintance.AssemblyInfoInputs.cache
+C:\Projects\Agrovision\spray-calculator\Services\GrainInterfaces\ISprayMaintance\obj\Debug\netcoreapp3.1\ISprayMaintance.AssemblyInfo.cs
+C:\Projects\Agrovision\spray-calculator\Services\GrainInterfaces\ISprayMaintance\bin\Debug\netcoreapp3.1\ISprayMaintance.pdb
+C:\Projects\Agrovision\spray-calculator\Services\GrainInterfaces\ISprayMaintance\bin\Debug\netcoreapp3.1\Agrovision.Common.Dtos.dll
+C:\Projects\Agrovision\spray-calculator\Services\GrainInterfaces\ISprayMaintance\bin\Debug\netcoreapp3.1\Agrovision.Common.Dtos.pdb
+C:\Projects\Agrovision\spray-calculator\Services\GrainInterfaces\ISprayMaintance\obj\Debug\netcoreapp3.1\ISprayMaintance.orleans.g.args.txt
+C:\Projects\Agrovision\spray-calculator\Services\GrainInterfaces\ISprayMaintance\obj\Debug\netcoreapp3.1\ISprayMaintance.orleans.g.cs
+C:\Projects\Agrovision\spray-calculator\Services\GrainInterfaces\ISprayMaintance\obj\Debug\netcoreapp3.1\ISprayMaintance.csproj.CoreCompileInputs.cache
+C:\Projects\Agrovision\spray-calculator\Services\GrainInterfaces\ISprayMaintance\obj\Debug\netcoreapp3.1\ISprayMaintance.csproj.CopyComplete
+C:\Projects\Agrovision\spray-calculator\Services\GrainInterfaces\ISprayMaintance\obj\Debug\netcoreapp3.1\ISprayMaintance.dll
+C:\Projects\Agrovision\spray-calculator\Services\GrainInterfaces\ISprayMaintance\obj\Debug\netcoreapp3.1\ISprayMaintance.pdb

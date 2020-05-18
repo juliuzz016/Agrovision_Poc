@@ -9,4 +9,3 @@ C:\Projects\Agrovision\spray-calculator\Data\Agrovision.Spray_Calculator.Data\ob
 C:\Projects\Agrovision\spray-calculator\Data\Agrovision.Spray_Calculator.Data\obj\Debug\netcoreapp3.1\Agrovision.Spray_Calculator.Data.dll
 C:\Projects\Agrovision\spray-calculator\Data\Agrovision.Spray_Calculator.Data\obj\Debug\netcoreapp3.1\Agrovision.Spray_Calculator.Data.pdb
 C:\Projects\Agrovision\spray-calculator\Data\Agrovision.Spray_Calculator.Data\obj\Debug\netcoreapp3.1\Agrovision.Spray_Calculator.Data.genruntimeconfig.cache
-C:\Projects\Agrovision\spray-calculator\Data\Agrovision.Spray_Calculator.Data\obj\Debug\netcoreapp3.1\Agrovision.Spray_Calculator.Data.csprojAssemblyReference.cache

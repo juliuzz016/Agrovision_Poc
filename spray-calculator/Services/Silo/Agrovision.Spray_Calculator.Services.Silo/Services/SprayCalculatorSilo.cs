@@ -10,6 +10,8 @@ using Orleans.Configuration;
 using Orleans.Hosting;
 using Spray_Calculator;
 using SprayCalculatorRepository.RepositoryImplementations;
+using SprayerMaintance;
+using SprayingAgentMaintance;
 using System;
 using System.Net;
 using System.Threading;
@@ -45,7 +47,9 @@ namespace Agrovision.Spray_Calculator.Services.Silo.Services
                 {
                     parts.AddApplicationPart(typeof(BaseGrain).Assembly).WithReferences();
                     parts.AddApplicationPart(typeof(FieldsMaintance.FieldsMaintanceGrain).Assembly).WithReferences();
-                    parts.AddApplicationPart(typeof(IDosage_CalculatorGrain).Assembly).WithReferences();
+                    parts.AddApplicationPart(typeof(Dosage_CalculatorGrain).Assembly).WithReferences();
+                    parts.AddApplicationPart(typeof(SprayerMaintanceGrain).Assembly).WithReferences();
+                    parts.AddApplicationPart(typeof(SprayingAgentMaintanceGrain).Assembly).WithReferences();
 
                 })
                 .UseDashboard(options =>
@@ -62,7 +66,8 @@ namespace Agrovision.Spray_Calculator.Services.Silo.Services
                     services.AddTransient<SprayCalculatorContext>();
 
                     services.AddTransient<FieldsRepository>();
-
+                    services.AddTransient<SprayersRepository>();
+                    services.AddTransient<SprayingAgentsRepository>();
 
                     services.AddTransient<IDosage_CalculatorBL, Dosage_Calculator>();
 

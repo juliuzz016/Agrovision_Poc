@@ -86,3 +86,11 @@ C:\Projects\Agrovision\spray-calculator\Services\Silo\Agrovision.Spray_Calculato
 C:\Projects\Agrovision\spray-calculator\Services\Silo\Agrovision.Spray_Calculator.Services.Silo\bin\Debug\netcoreapp3.1\appsettings.json
 C:\Projects\Agrovision\spray-calculator\Services\Silo\Agrovision.Spray_Calculator.Services.Silo\bin\Debug\netcoreapp3.1\FieldsMaintance.dll
 C:\Projects\Agrovision\spray-calculator\Services\Silo\Agrovision.Spray_Calculator.Services.Silo\bin\Debug\netcoreapp3.1\FieldsMaintance.pdb
+C:\Projects\Agrovision\spray-calculator\Services\Silo\Agrovision.Spray_Calculator.Services.Silo\bin\Debug\netcoreapp3.1\ISprayingAgentMaintance.dll
+C:\Projects\Agrovision\spray-calculator\Services\Silo\Agrovision.Spray_Calculator.Services.Silo\bin\Debug\netcoreapp3.1\ISprayMaintance.dll
+C:\Projects\Agrovision\spray-calculator\Services\Silo\Agrovision.Spray_Calculator.Services.Silo\bin\Debug\netcoreapp3.1\SprayerMaintance.dll
+C:\Projects\Agrovision\spray-calculator\Services\Silo\Agrovision.Spray_Calculator.Services.Silo\bin\Debug\netcoreapp3.1\SprayingAgentMaintance.dll
+C:\Projects\Agrovision\spray-calculator\Services\Silo\Agrovision.Spray_Calculator.Services.Silo\bin\Debug\netcoreapp3.1\SprayerMaintance.pdb
+C:\Projects\Agrovision\spray-calculator\Services\Silo\Agrovision.Spray_Calculator.Services.Silo\bin\Debug\netcoreapp3.1\SprayingAgentMaintance.pdb
+C:\Projects\Agrovision\spray-calculator\Services\Silo\Agrovision.Spray_Calculator.Services.Silo\bin\Debug\netcoreapp3.1\ISprayingAgentMaintance.pdb
+C:\Projects\Agrovision\spray-calculator\Services\Silo\Agrovision.Spray_Calculator.Services.Silo\bin\Debug\netcoreapp3.1\ISprayMaintance.pdb

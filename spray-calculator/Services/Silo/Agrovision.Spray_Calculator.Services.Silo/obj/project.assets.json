@@ -2454,6 +2454,34 @@
           "bin/placeholder/IFieldsMaintance.dll": {}
         }
       },
+      "ISprayingAgentMaintance/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v3.1",
+        "dependencies": {
+          "Agrovision.Common.Dtos": "1.0.0",
+          "Microsoft.Orleans.Core.Abstractions": "3.1.6"
+        },
+        "compile": {
+          "bin/placeholder/ISprayingAgentMaintance.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/ISprayingAgentMaintance.dll": {}
+        }
+      },
+      "ISprayMaintance/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v3.1",
+        "dependencies": {
+          "Agrovision.Common.Dtos": "1.0.0",
+          "Microsoft.Orleans.Core.Abstractions": "3.1.6"
+        },
+        "compile": {
+          "bin/placeholder/ISprayMaintance.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/ISprayMaintance.dll": {}
+        }
+      },
       "ISpray_Calculator/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v3.1",
@@ -2478,6 +2506,38 @@
         },
         "runtime": {
           "bin/placeholder/SprayCalculatorRepository.dll": {}
+        }
+      },
+      "SprayerMaintance/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v3.1",
+        "dependencies": {
+          "Agrovision.Common.Dtos": "1.0.0",
+          "ISprayMaintance": "1.0.0",
+          "Microsoft.Orleans.Core.Abstractions": "3.1.6",
+          "SprayCalculatorRepository": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/SprayerMaintance.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/SprayerMaintance.dll": {}
+        }
+      },
+      "SprayingAgentMaintance/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v3.1",
+        "dependencies": {
+          "Agrovision.Common.Dtos": "1.0.0",
+          "ISprayingAgentMaintance": "1.0.0",
+          "Microsoft.Orleans.Core.Abstractions": "3.1.6",
+          "SprayCalculatorRepository": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/SprayingAgentMaintance.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/SprayingAgentMaintance.dll": {}
         }
       },
       "Spray_Calculator/1.0.0": {
@@ -8004,6 +8064,16 @@
       "path": "../../GrainInterfaces/IFieldsMaintance/IFieldsMaintance.csproj",
       "msbuildProject": "../../GrainInterfaces/IFieldsMaintance/IFieldsMaintance.csproj"
     },
+    "ISprayingAgentMaintance/1.0.0": {
+      "type": "project",
+      "path": "../../GrainInterfaces/ISprayingAgentMaintance/ISprayingAgentMaintance.csproj",
+      "msbuildProject": "../../GrainInterfaces/ISprayingAgentMaintance/ISprayingAgentMaintance.csproj"
+    },
+    "ISprayMaintance/1.0.0": {
+      "type": "project",
+      "path": "../../GrainInterfaces/ISprayMaintance/ISprayMaintance.csproj",
+      "msbuildProject": "../../GrainInterfaces/ISprayMaintance/ISprayMaintance.csproj"
+    },
     "ISpray_Calculator/1.0.0": {
       "type": "project",
       "path": "../../GrainInterfaces/ISpray_Calculator/ISpray_Calculator.csproj",
@@ -8013,6 +8083,16 @@
       "type": "project",
       "path": "../../../Repository/SprayCalculatorRepository/SprayCalculatorRepository.csproj",
       "msbuildProject": "../../../Repository/SprayCalculatorRepository/SprayCalculatorRepository.csproj"
+    },
+    "SprayerMaintance/1.0.0": {
+      "type": "project",
+      "path": "../../Grains/SprayerMaintance/SprayerMaintance.csproj",
+      "msbuildProject": "../../Grains/SprayerMaintance/SprayerMaintance.csproj"
+    },
+    "SprayingAgentMaintance/1.0.0": {
+      "type": "project",
+      "path": "../../Grains/SprayingAgentMaintance/SprayingAgentMaintance.csproj",
+      "msbuildProject": "../../Grains/SprayingAgentMaintance/SprayingAgentMaintance.csproj"
     },
     "Spray_Calculator/1.0.0": {
       "type": "project",
@@ -8029,7 +8109,9 @@
       "Microsoft.Orleans.Server >= 3.1.6",
       "OrleansDashboard >= 3.1.0",
       "SprayCalculatorRepository >= 1.0.0",
-      "Spray_Calculator >= 1.0.0"
+      "Spray_Calculator >= 1.0.0",
+      "SprayerMaintance >= 1.0.0",
+      "SprayingAgentMaintance >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -8077,6 +8159,12 @@
             },
             "C:\\Projects\\Agrovision\\spray-calculator\\Services\\Grains\\FieldsMaintanceGrain\\FieldsMaintance.csproj": {
               "projectPath": "C:\\Projects\\Agrovision\\spray-calculator\\Services\\Grains\\FieldsMaintanceGrain\\FieldsMaintance.csproj"
+            },
+            "C:\\Projects\\Agrovision\\spray-calculator\\Services\\Grains\\SprayerMaintance\\SprayerMaintance.csproj": {
+              "projectPath": "C:\\Projects\\Agrovision\\spray-calculator\\Services\\Grains\\SprayerMaintance\\SprayerMaintance.csproj"
+            },
+            "C:\\Projects\\Agrovision\\spray-calculator\\Services\\Grains\\SprayingAgentMaintance\\SprayingAgentMaintance.csproj": {
+              "projectPath": "C:\\Projects\\Agrovision\\spray-calculator\\Services\\Grains\\SprayingAgentMaintance\\SprayingAgentMaintance.csproj"
             }
           }
         }

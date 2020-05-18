@@ -354,6 +354,154 @@
         }
       }
     },
+    "C:\\Projects\\Agrovision\\spray-calculator\\Services\\GrainInterfaces\\ISprayingAgentMaintance\\ISprayingAgentMaintance.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Projects\\Agrovision\\spray-calculator\\Services\\GrainInterfaces\\ISprayingAgentMaintance\\ISprayingAgentMaintance.csproj",
+        "projectName": "ISprayingAgentMaintance",
+        "projectPath": "C:\\Projects\\Agrovision\\spray-calculator\\Services\\GrainInterfaces\\ISprayingAgentMaintance\\ISprayingAgentMaintance.csproj",
+        "packagesPath": "C:\\Users\\Julius\\.nuget\\packages\\",
+        "outputPath": "C:\\Projects\\Agrovision\\spray-calculator\\Services\\GrainInterfaces\\ISprayingAgentMaintance\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Microsoft\\Xamarin\\NuGet\\",
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Julius\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {},
+          "https://pkgs.dev.azure.com/TransAfrica/Ecosystem/_packaging/EcosystemFeed/nuget/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "projectReferences": {
+              "C:\\Projects\\Agrovision\\spray-calculator\\Common\\Data\\Agrovision.Common.Dtos\\Agrovision.Common.Dtos.csproj": {
+                "projectPath": "C:\\Projects\\Agrovision\\spray-calculator\\Common\\Data\\Agrovision.Common.Dtos\\Agrovision.Common.Dtos.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "dependencies": {
+            "Microsoft.Orleans.CodeGenerator.MSBuild": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[3.1.6, )"
+            },
+            "Microsoft.Orleans.Core.Abstractions": {
+              "target": "Package",
+              "version": "[3.1.6, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.201\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Projects\\Agrovision\\spray-calculator\\Services\\GrainInterfaces\\ISprayMaintance\\ISprayMaintance.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Projects\\Agrovision\\spray-calculator\\Services\\GrainInterfaces\\ISprayMaintance\\ISprayMaintance.csproj",
+        "projectName": "ISprayMaintance",
+        "projectPath": "C:\\Projects\\Agrovision\\spray-calculator\\Services\\GrainInterfaces\\ISprayMaintance\\ISprayMaintance.csproj",
+        "packagesPath": "C:\\Users\\Julius\\.nuget\\packages\\",
+        "outputPath": "C:\\Projects\\Agrovision\\spray-calculator\\Services\\GrainInterfaces\\ISprayMaintance\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Microsoft\\Xamarin\\NuGet\\",
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Julius\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {},
+          "https://pkgs.dev.azure.com/TransAfrica/Ecosystem/_packaging/EcosystemFeed/nuget/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "projectReferences": {
+              "C:\\Projects\\Agrovision\\spray-calculator\\Common\\Data\\Agrovision.Common.Dtos\\Agrovision.Common.Dtos.csproj": {
+                "projectPath": "C:\\Projects\\Agrovision\\spray-calculator\\Common\\Data\\Agrovision.Common.Dtos\\Agrovision.Common.Dtos.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "dependencies": {
+            "Microsoft.Orleans.CodeGenerator.MSBuild": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[3.1.6, )"
+            },
+            "Microsoft.Orleans.Core.Abstractions": {
+              "target": "Package",
+              "version": "[3.1.6, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.201\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
     "C:\\Projects\\Agrovision\\spray-calculator\\Services\\GrainInterfaces\\ISpray_Calculator\\ISpray_Calculator.csproj": {
       "version": "1.0.0",
       "restore": {
@@ -581,6 +729,166 @@
         }
       }
     },
+    "C:\\Projects\\Agrovision\\spray-calculator\\Services\\Grains\\SprayerMaintance\\SprayerMaintance.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Projects\\Agrovision\\spray-calculator\\Services\\Grains\\SprayerMaintance\\SprayerMaintance.csproj",
+        "projectName": "SprayerMaintance",
+        "projectPath": "C:\\Projects\\Agrovision\\spray-calculator\\Services\\Grains\\SprayerMaintance\\SprayerMaintance.csproj",
+        "packagesPath": "C:\\Users\\Julius\\.nuget\\packages\\",
+        "outputPath": "C:\\Projects\\Agrovision\\spray-calculator\\Services\\Grains\\SprayerMaintance\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Microsoft\\Xamarin\\NuGet\\",
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Julius\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {},
+          "https://pkgs.dev.azure.com/TransAfrica/Ecosystem/_packaging/EcosystemFeed/nuget/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "projectReferences": {
+              "C:\\Projects\\Agrovision\\spray-calculator\\Common\\Data\\Agrovision.Common.Dtos\\Agrovision.Common.Dtos.csproj": {
+                "projectPath": "C:\\Projects\\Agrovision\\spray-calculator\\Common\\Data\\Agrovision.Common.Dtos\\Agrovision.Common.Dtos.csproj"
+              },
+              "C:\\Projects\\Agrovision\\spray-calculator\\Repository\\SprayCalculatorRepository\\SprayCalculatorRepository.csproj": {
+                "projectPath": "C:\\Projects\\Agrovision\\spray-calculator\\Repository\\SprayCalculatorRepository\\SprayCalculatorRepository.csproj"
+              },
+              "C:\\Projects\\Agrovision\\spray-calculator\\Services\\GrainInterfaces\\ISprayMaintance\\ISprayMaintance.csproj": {
+                "projectPath": "C:\\Projects\\Agrovision\\spray-calculator\\Services\\GrainInterfaces\\ISprayMaintance\\ISprayMaintance.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "dependencies": {
+            "Microsoft.Orleans.CodeGenerator.MSBuild": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[3.1.6, )"
+            },
+            "Microsoft.Orleans.Core.Abstractions": {
+              "target": "Package",
+              "version": "[3.1.6, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.201\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Projects\\Agrovision\\spray-calculator\\Services\\Grains\\SprayingAgentMaintance\\SprayingAgentMaintance.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Projects\\Agrovision\\spray-calculator\\Services\\Grains\\SprayingAgentMaintance\\SprayingAgentMaintance.csproj",
+        "projectName": "SprayingAgentMaintance",
+        "projectPath": "C:\\Projects\\Agrovision\\spray-calculator\\Services\\Grains\\SprayingAgentMaintance\\SprayingAgentMaintance.csproj",
+        "packagesPath": "C:\\Users\\Julius\\.nuget\\packages\\",
+        "outputPath": "C:\\Projects\\Agrovision\\spray-calculator\\Services\\Grains\\SprayingAgentMaintance\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Microsoft\\Xamarin\\NuGet\\",
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Julius\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {},
+          "https://pkgs.dev.azure.com/TransAfrica/Ecosystem/_packaging/EcosystemFeed/nuget/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "projectReferences": {
+              "C:\\Projects\\Agrovision\\spray-calculator\\Common\\Data\\Agrovision.Common.Dtos\\Agrovision.Common.Dtos.csproj": {
+                "projectPath": "C:\\Projects\\Agrovision\\spray-calculator\\Common\\Data\\Agrovision.Common.Dtos\\Agrovision.Common.Dtos.csproj"
+              },
+              "C:\\Projects\\Agrovision\\spray-calculator\\Repository\\SprayCalculatorRepository\\SprayCalculatorRepository.csproj": {
+                "projectPath": "C:\\Projects\\Agrovision\\spray-calculator\\Repository\\SprayCalculatorRepository\\SprayCalculatorRepository.csproj"
+              },
+              "C:\\Projects\\Agrovision\\spray-calculator\\Services\\GrainInterfaces\\ISprayingAgentMaintance\\ISprayingAgentMaintance.csproj": {
+                "projectPath": "C:\\Projects\\Agrovision\\spray-calculator\\Services\\GrainInterfaces\\ISprayingAgentMaintance\\ISprayingAgentMaintance.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "dependencies": {
+            "Microsoft.Orleans.CodeGenerator.MSBuild": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[3.1.6, )"
+            },
+            "Microsoft.Orleans.Core.Abstractions": {
+              "target": "Package",
+              "version": "[3.1.6, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.201\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
     "C:\\Projects\\Agrovision\\spray-calculator\\Services\\Silo\\Agrovision.Spray_Calculator.Services.Silo\\Agrovision.Spray_Calculator.Services.Silo.csproj": {
       "version": "1.0.0",
       "restore": {
@@ -621,6 +929,12 @@
               },
               "C:\\Projects\\Agrovision\\spray-calculator\\Services\\Grains\\FieldsMaintanceGrain\\FieldsMaintance.csproj": {
                 "projectPath": "C:\\Projects\\Agrovision\\spray-calculator\\Services\\Grains\\FieldsMaintanceGrain\\FieldsMaintance.csproj"
+              },
+              "C:\\Projects\\Agrovision\\spray-calculator\\Services\\Grains\\SprayerMaintance\\SprayerMaintance.csproj": {
+                "projectPath": "C:\\Projects\\Agrovision\\spray-calculator\\Services\\Grains\\SprayerMaintance\\SprayerMaintance.csproj"
+              },
+              "C:\\Projects\\Agrovision\\spray-calculator\\Services\\Grains\\SprayingAgentMaintance\\SprayingAgentMaintance.csproj": {
+                "projectPath": "C:\\Projects\\Agrovision\\spray-calculator\\Services\\Grains\\SprayingAgentMaintance\\SprayingAgentMaintance.csproj"
               }
             }
           }
