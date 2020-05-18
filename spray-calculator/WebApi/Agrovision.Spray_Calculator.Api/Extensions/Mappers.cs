@@ -1,6 +1,5 @@
 ﻿using Agrovision.Spray_Calculator.Api.Models;
 using Agrovision.Spray_Calculator.gRPC.Protos;
-using Microsoft.AspNetCore.Authentication;
 using System;
 
 namespace Agrovision.Spray_Calculator.Api.Extensions
@@ -18,7 +17,8 @@ namespace Agrovision.Spray_Calculator.Api.Extensions
 
             };
         }
-        public static Models.FieldModel MapFieldModel(this gRPC.Protos.FieldModel value){
+        public static Models.FieldModel MapFieldModel(this gRPC.Protos.FieldModel value)
+        {
             if (value is null)
                 return new Models.FieldModel();
 
@@ -31,7 +31,18 @@ namespace Agrovision.Spray_Calculator.Api.Extensions
                 IsActive = value.IsActive,
                 UserKey = Guid.Parse(value.UserKey)
             };
+        }
+        public static Models.SprayingAgentModel MapSprayingAgentModel(this gRPC.Protos.SprayingAgentModel value)
+        {
+            if (value is null)
+                return new Models.SprayingAgentModel();
+            return new Models.SprayingAgentModel
+            {
+                AgentDescription = value.Description,
+                SprayerKey = Guid.Parse(value.SprayerKey),
+                RecomendedDosage = (decimal)value.RecomendedDosage
 
+            };
 
         }
     }

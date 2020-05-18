@@ -2,6 +2,8 @@
 using Agrovision.Spray_Calculator.Api.Models;
 using Microsoft.AspNetCore.Mvc;
 using System;
+using System.Collections.Generic;
+using System.Linq;
 using System.Threading.Tasks;
 using static Agrovision.Spray_Calculator.gRPC.Protos.Spray_CalculatorGRPCService;
 
@@ -29,6 +31,14 @@ namespace Agrovision.Spray_Calculator.Api.Controllers
                 IsActive = false
             });
             return await Task.FromResult(res.MapFieldModel());
+        }
+        [HttpGet]
+        public async Task<List<FieldModel>> GetActiveFields()
+        {
+            var res = await _spray_CalculatorGRPCServiceClient.GetActiveFieldsAsync(new gRPC.Protos.LookupModel {            
+            
+            });
+            return await Task.FromResult(res.FieldList.Select(z => z.MapFieldModel()).ToList());
         }
     }
 }

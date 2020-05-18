@@ -6,8 +6,12 @@ package Spray_Calculatorproto;
 
 service Spray_CalculatorGRPCService {
  rpc CalculateSpray (CalculateSprayRequest) returns (CalculateSprayResponse);
-  rpc CreateField (FieldModel) returns (FieldModel);
- rpc GetActiveFields (FieldLookup) returns (ListFieldModel);
+ rpc CreateField (FieldModel) returns (FieldModel);
+ rpc GetActiveFields (LookupModel) returns (ListFieldModel);
+   rpc CreateSprayer (SprayersModel) returns (SprayersModel);
+ rpc GetActiveSprayer (LookupModel) returns (ListSprayersModel);
+   rpc CreateSprayingAgent (SprayingAgentModel) returns (SprayingAgentModel);
+ rpc GetActiveSprayingAgent (LookupModel) returns (ListSprayingAgentModel);
 }
 
 message CalculateSprayRequest {
@@ -31,7 +35,27 @@ message FieldModel {
 message ListFieldModel {
  repeated FieldModel FieldList = 1;
 }
-message FieldLookup {
+message LookupModel {
  int32 page = 1;
  int32 pageSize = 2;
+}
+message SprayersModel {
+ int64 Id = 1;
+ string SprayerKey = 2;
+ string Description = 4;
+ double SparyerVolumeL =5;
+ bool IsActive = 6;
+}
+message ListSprayersModel {
+ repeated SprayersModel FieldList = 1;
+}
+message SprayingAgentModel {
+ int64 Id = 1;
+ string SprayerKey = 2;
+ string Description = 4;
+ double RecomendedDosage =5;
+ bool IsActive = 6;
+}
+message ListSprayingAgentModel {
+ repeated SprayingAgentModel FieldList = 1;
 }

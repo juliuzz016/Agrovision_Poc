@@ -1,2 +1,0 @@
-obj\Debug\netcoreapp3.1/SprayCalculator.cs \
-obj\Debug\netcoreapp3.1/SprayCalculatorGrpc.cs: Protos/spray_calculator.proto

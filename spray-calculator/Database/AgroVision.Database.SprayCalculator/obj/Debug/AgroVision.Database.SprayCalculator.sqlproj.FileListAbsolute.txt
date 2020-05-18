@@ -1,9 +1,0 @@
-C:\Projects\Agrovision\spray-calculator\Database\AgroVision.Database.SprayCalculator\bin\Debug\Agrovision.Database.SprayCalculator.dacpac
-C:\Projects\Agrovision\spray-calculator\Database\AgroVision.Database.SprayCalculator\bin\Debug\AgroVision.Database.SprayCalculator.dll
-C:\Projects\Agrovision\spray-calculator\Database\AgroVision.Database.SprayCalculator\bin\Debug\AgroVision.Database.SprayCalculator.pdb
-C:\Projects\Agrovision\spray-calculator\Database\AgroVision.Database.SprayCalculator\obj\Debug\Model.xml
-C:\Projects\Agrovision\spray-calculator\Database\AgroVision.Database.SprayCalculator\obj\Debug\refactor.xml
-C:\Projects\Agrovision\spray-calculator\Database\AgroVision.Database.SprayCalculator\obj\Debug\postdeploy.sql
-C:\Projects\Agrovision\spray-calculator\Database\AgroVision.Database.SprayCalculator\obj\Debug\predeploy.sql
-C:\Projects\Agrovision\spray-calculator\Database\AgroVision.Database.SprayCalculator\obj\Debug\AgroVision.Database.SprayCalculator.dll
-C:\Projects\Agrovision\spray-calculator\Database\AgroVision.Database.SprayCalculator\obj\Debug\AgroVision.Database.SprayCalculator.pdb

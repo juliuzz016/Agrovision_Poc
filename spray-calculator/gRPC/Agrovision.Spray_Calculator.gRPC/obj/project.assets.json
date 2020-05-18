@@ -1854,6 +1854,34 @@
           "bin/placeholder/IFieldsMaintance.dll": {}
         }
       },
+      "ISprayingAgentMaintance/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v3.1",
+        "dependencies": {
+          "Agrovision.Common.Dtos": "1.0.0",
+          "Microsoft.Orleans.Core.Abstractions": "3.1.6"
+        },
+        "compile": {
+          "bin/placeholder/ISprayingAgentMaintance.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/ISprayingAgentMaintance.dll": {}
+        }
+      },
+      "ISprayMaintance/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v3.1",
+        "dependencies": {
+          "Agrovision.Common.Dtos": "1.0.0",
+          "Microsoft.Orleans.Core.Abstractions": "3.1.6"
+        },
+        "compile": {
+          "bin/placeholder/ISprayMaintance.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/ISprayMaintance.dll": {}
+        }
+      },
       "ISpray_Calculator/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v3.1",
@@ -6368,6 +6396,16 @@
       "path": "../../Services/GrainInterfaces/IFieldsMaintance/IFieldsMaintance.csproj",
       "msbuildProject": "../../Services/GrainInterfaces/IFieldsMaintance/IFieldsMaintance.csproj"
     },
+    "ISprayingAgentMaintance/1.0.0": {
+      "type": "project",
+      "path": "../../Services/GrainInterfaces/ISprayingAgentMaintance/ISprayingAgentMaintance.csproj",
+      "msbuildProject": "../../Services/GrainInterfaces/ISprayingAgentMaintance/ISprayingAgentMaintance.csproj"
+    },
+    "ISprayMaintance/1.0.0": {
+      "type": "project",
+      "path": "../../Services/GrainInterfaces/ISprayMaintance/ISprayMaintance.csproj",
+      "msbuildProject": "../../Services/GrainInterfaces/ISprayMaintance/ISprayMaintance.csproj"
+    },
     "ISpray_Calculator/1.0.0": {
       "type": "project",
       "path": "../../Services/GrainInterfaces/ISpray_Calculator/ISpray_Calculator.csproj",
@@ -6378,7 +6416,9 @@
     ".NETCoreApp,Version=v3.1": [
       "Grpc.AspNetCore >= 2.27.0",
       "IFieldsMaintance >= 1.0.0",
+      "ISprayMaintance >= 1.0.0",
       "ISpray_Calculator >= 1.0.0",
+      "ISprayingAgentMaintance >= 1.0.0",
       "Microsoft.Extensions.Logging.Abstractions >= 3.1.4",
       "Microsoft.Orleans.Client >= 3.1.6"
     ]
@@ -6419,6 +6459,12 @@
           "projectReferences": {
             "C:\\Projects\\Agrovision\\spray-calculator\\Services\\GrainInterfaces\\IFieldsMaintance\\IFieldsMaintance.csproj": {
               "projectPath": "C:\\Projects\\Agrovision\\spray-calculator\\Services\\GrainInterfaces\\IFieldsMaintance\\IFieldsMaintance.csproj"
+            },
+            "C:\\Projects\\Agrovision\\spray-calculator\\Services\\GrainInterfaces\\ISprayingAgentMaintance\\ISprayingAgentMaintance.csproj": {
+              "projectPath": "C:\\Projects\\Agrovision\\spray-calculator\\Services\\GrainInterfaces\\ISprayingAgentMaintance\\ISprayingAgentMaintance.csproj"
+            },
+            "C:\\Projects\\Agrovision\\spray-calculator\\Services\\GrainInterfaces\\ISprayMaintance\\ISprayMaintance.csproj": {
+              "projectPath": "C:\\Projects\\Agrovision\\spray-calculator\\Services\\GrainInterfaces\\ISprayMaintance\\ISprayMaintance.csproj"
             },
             "C:\\Projects\\Agrovision\\spray-calculator\\Services\\GrainInterfaces\\ISpray_Calculator\\ISpray_Calculator.csproj": {
               "projectPath": "C:\\Projects\\Agrovision\\spray-calculator\\Services\\GrainInterfaces\\ISpray_Calculator\\ISpray_Calculator.csproj"

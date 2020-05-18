@@ -16,6 +16,8 @@
 
   <ItemGroup>
     <ProjectReference Include="..\..\Services\GrainInterfaces\IFieldsMaintance\IFieldsMaintance.csproj" />
+    <ProjectReference Include="..\..\Services\GrainInterfaces\ISprayingAgentMaintance\ISprayingAgentMaintance.csproj" />
+    <ProjectReference Include="..\..\Services\GrainInterfaces\ISprayMaintance\ISprayMaintance.csproj" />
     <ProjectReference Include="..\..\Services\GrainInterfaces\ISpray_Calculator\ISpray_Calculator.csproj" />
   </ItemGroup>
 
