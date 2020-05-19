@@ -36,7 +36,9 @@ namespace FieldsMaintance
         public async Task<IEnumerable<FieldsDto>> GetActiveFields()
         {
             var res = await _fieldsRepository.Lookup(z => z.IsActive && z.UserKey == HardcodedUserKey);
-            return await Task.FromResult(res.Select(z => z.MapField()));
+            if (!res.Any())
+                return  new List<FieldsDto>();
+            return await Task.FromResult(res.Select(z => z.MapField()).ToList());
 
         }
     }

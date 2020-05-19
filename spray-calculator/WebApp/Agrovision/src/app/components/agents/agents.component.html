@@ -1,11 +1,39 @@
-<form [formGroup]="SprayingAgentForm">
-    <mat-form-field class="full-width-input col-lg-4">
-      <input matInput type="text" placeholder="Spraying Agent Name" formControlName="SprayingAgentName">        
-    </mat-form-field>
-    <mat-form-field class="full-width-input col-lg-4">
-      <input matInput name="SprayingAgentQty" placeholder="Spraying Agent Qty L/ha" formControlName="SprayingAgentQty" type="number" min="1">
-      <mat-error>
-        Input a valid value more then 0.
-      </mat-error>
-    </mat-form-field>
-  </form>
+<div class="col-lg-12 row">
+  <div class="col-lg-6">
+      <form [formGroup]="SprayingAgentForm" >
+        <div class="col-lg-12 row">
+          <mat-form-field class="full-width-input col-lg-4">
+            <input matInput type="text" placeholder="Spraying Agent Name" formControlName="SprayingAgentName">        
+          </mat-form-field>
+          <mat-form-field class="full-width-input col-lg-4">
+            <input matInput name="recomendedDosage" placeholder="Recomended Dosage" formControlName="recomendedDosage" type="number" min="1">
+            <mat-error>
+              Input a valid value more then 0.
+            </mat-error>
+          </mat-form-field>
+          <button mat-raised-button class="col-lg-12" color="primary" (click)="onSubmit()">Save</button>     
+        </div>
+        </form>  
+           
+  </div>
+  <div class="col-lg-6">
+      <table class="table table-bordered">
+          <thead>
+              <th class="col">
+                  Spraying Agent Name
+              </th>
+              <th class="col">
+              Recomended Dosage
+              </th>
+              <th></th>
+          </thead>
+          <tbody>
+              <tr *ngFor="let agent of agents">
+                  <td>{{agent.agentDescription}}</td>
+                  <td>{{agent.recomendedDosage}}</td>
+                  <td></td>
+              </tr>
+          </tbody>
+      </table>
+  </div>
+</div>

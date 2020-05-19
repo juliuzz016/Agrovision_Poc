@@ -8,7 +8,7 @@ using static Agrovision.Spray_Calculator.gRPC.Protos.Spray_CalculatorGRPCService
 
 namespace Agrovision.Spray_Calculator.Api.Controllers
 {
-    [Route("api/[controller]")]
+    [Route("api/[controller]/[action]")]
     [ApiController]
     public class SprayingAgentController : ControllerBase
     {
@@ -18,7 +18,7 @@ namespace Agrovision.Spray_Calculator.Api.Controllers
             _spray_CalculatorGRPCServiceClient = spray_CalculatorGRPCServiceClient;
         }
         [HttpPost]
-        public async Task<SprayingAgentModel> CreateSprayingAgentModel(SprayingAgentModel sprayingAgentModel)
+        public async Task<SprayingAgentModel> CreateSprayingAgent(SprayingAgentModel sprayingAgentModel)
         {
             var res = await _spray_CalculatorGRPCServiceClient.CreateSprayingAgentAsync(new gRPC.Protos.SprayingAgentModel
             {
@@ -31,7 +31,12 @@ namespace Agrovision.Spray_Calculator.Api.Controllers
         [HttpGet]
         public async Task<List<SprayingAgentModel>> GetActiveSprayingAgent()
         {
-            var res = await _spray_CalculatorGRPCServiceClient.GetActiveSprayingAgentAsync(new gRPC.Protos.LookupModel());
+            var res = await _spray_CalculatorGRPCServiceClient.GetActiveSprayingAgentAsync(new gRPC.Protos.LookupModel()
+            {
+                Page = 1,
+                PageSize = 10
+
+            });
             return await Task.FromResult(res.FieldList.Select(z => z.MapSprayingAgentModel()).ToList());
 
         }

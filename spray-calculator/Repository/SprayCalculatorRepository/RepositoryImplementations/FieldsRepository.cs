@@ -22,6 +22,7 @@ namespace SprayCalculatorRepository.RepositoryImplementations
         {
             entity.FieldKey = Guid.NewGuid();
             entity.UserKey = HardcodedUserKey;
+            entity.IsActive = true;
             await _sprayCalculatorContext.Fields.AddAsync(entity);
             return (await _sprayCalculatorContext.SaveChangesAsync(), entity);
         }

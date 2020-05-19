@@ -20,6 +20,7 @@ namespace SprayCalculatorRepository.RepositoryImplementations
         public override async Task<(long RecordsAffected, SprayingAgents Entity)> Create(SprayingAgents entity)
         {
             entity.AgentKey = Guid.NewGuid();
+            entity.IsActive = true;
             await _sprayCalculatorContext.SprayingAgents.AddAsync(entity);
             return (await _sprayCalculatorContext.SaveChangesAsync(), entity);
         }

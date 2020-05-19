@@ -35,8 +35,11 @@ namespace Agrovision.Spray_Calculator.Api.Controllers
         [HttpGet]
         public async Task<List<FieldModel>> GetActiveFields()
         {
-            var res = await _spray_CalculatorGRPCServiceClient.GetActiveFieldsAsync(new gRPC.Protos.LookupModel {            
-            
+            var res = await _spray_CalculatorGRPCServiceClient.GetActiveFieldsAsync(new gRPC.Protos.LookupModel()
+            {
+                Page = 1,
+                PageSize = 10
+
             });
             return await Task.FromResult(res.FieldList.Select(z => z.MapFieldModel()).ToList());
         }

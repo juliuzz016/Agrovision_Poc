@@ -31,7 +31,7 @@ namespace SprayingAgentMaintance
         public async Task<IEnumerable<SprayingAgentDto>> GetActiveSprayingAgents() {
 
             var res = await _sprayingAgentsRepository.Lookup(z => z.IsActive);
-            return await Task.FromResult(res.Select(z => z.MapSprayingAgentDto()));
+            return await Task.FromResult(res.Select(z => z.MapSprayingAgentDto()).ToList());
         }
     }
 }

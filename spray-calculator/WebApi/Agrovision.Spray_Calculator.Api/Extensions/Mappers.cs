@@ -41,7 +41,20 @@ namespace Agrovision.Spray_Calculator.Api.Extensions
                 AgentDescription = value.Description,
                 SprayerKey = Guid.Parse(value.SprayerKey),
                 RecomendedDosage = (decimal)value.RecomendedDosage
+            };
+        }
 
+        public static SprayModel MapSprayModel(this SprayersModel value)
+        {
+            if (value is null)
+                return new SprayModel();
+            return new SprayModel
+            {
+                Description = value.Description,
+                Id = value.Id,
+                IsActive = value.IsActive,
+                SparyerVolumeL = value.SparyerVolumeL,
+                SprayerKey = Guid.Parse(value.SprayerKey)
             };
 
         }

@@ -1,1 +1,36 @@
-<p>calculator works!</p>
+<div class="container">
+    <div class="col-lg-12">
+        <div class="col-lg-12 row">
+            <div class="col-lg-6">
+                <mat-select matInput [(ngModel)]="selectedAgent" placeholder="Select Spraying Agent" required>
+                    <mat-option *ngFor="let agent of agents" [value]="agent">
+                        {{agent.agentDescription}} - {{agent.recomendedDosage}}
+                    </mat-option>
+                </mat-select>
+            </div>
+            <div class="col-lg-6">
+                <div class="col-lg-6">
+                    <mat-select matInput [(ngModel)]="selectedSpray" placeholder="Select Spraying Type" required>
+                        <mat-option *ngFor="let spray of sprays" [value]="spray">
+                            {{spray.description}} - {{spray.sparyerVolumeL}}
+                        </mat-option>
+                    </mat-select>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-12 row">
+            <div class="col-lg-6">
+                <mat-selection-list #fieldList [(ngModel)]="selectedFields" (selectionChange)="AddToCalculation()">
+                    <mat-list-option *ngFor="let calculatedField of calculatedFields" [value]="calculatedField">
+                        {{calculatedField.description}} - ({{calculatedField.fieldSize}}-ha)
+                    </mat-list-option>
+                </mat-selection-list>
+            </div>
+            <div class="col-lg-6">
+                Total Water Needed: {{totalWater}}
+                Total Agent Needed: {{totalAgent}}
+            </div>
+
+        </div>
+    </div>
+</div>

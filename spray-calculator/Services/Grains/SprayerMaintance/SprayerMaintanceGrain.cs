@@ -32,7 +32,7 @@ namespace SprayerMaintance
         public async Task<IEnumerable<SprayersDto>> GetActiveSprays() 
         {
             var res = await _sprayersRepository.Lookup(z => z.IsActive);
-            return await Task.FromResult(res.Select(z => z.MapSprayerDto()));
+            return await Task.FromResult(res.Select(z => z.MapSprayerDto()).ToList());
 
         }
     }
