@@ -5,6 +5,7 @@ import { Spray_CalculatorHttpService } from 'src/app/services/http.spray_calcula
 import { calculationRequestModel } from 'src/app/models/calculator/calculationModel';
 import { AgentModel } from 'src/app/models/agent/agent.model';
 import { SprayModel } from 'src/app/models/spray/spray.model';
+import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 
 @Component({
   selector: 'app-calculator',
@@ -18,11 +19,20 @@ export class CalculatorComponent implements OnInit {
   selectedFields: CalculatorModel[] = [];
   totalWater: number;
   totalAgent: number;
+  singleWater: number;
+  singleAgent: number;
   sprays: SprayModel[] = [];
   agents: AgentModel[] = [];
   selectedAgent: AgentModel;
   selectedSpray: SprayModel;
-  constructor(private _spray_CalculatorHttpService: Spray_CalculatorHttpService) { }
+  calculateDosageForm: FormGroup;
+  constructor(private _spray_CalculatorHttpService: Spray_CalculatorHttpService, private fb: FormBuilder) {
+    this.calculateDosageForm = this.fb.group({
+      agenVolume: [0, Validators.min(0)],
+      fieldSize: [0, Validators.min(0)],
+      waterRate: [0, Validators.min(0)]
+    });
+  }
 
   ngOnInit(): void {
     this.GetActiveFields();
@@ -58,6 +68,16 @@ export class CalculatorComponent implements OnInit {
     }, error => {
 
     });
+  }
+  CalculateSingle() {
+    this.singleWater = 0;
+    this.singleAgent = 0;
+    this._spray_CalculatorHttpService.CalculateDosage(new calculationRequestModel(this.calculateDosageForm.value.agenVolume,
+      this.calculateDosageForm.value.fieldSize, this.calculateDosageForm.value.waterRate)).subscribe(res => {
+        this.singleWater = res.waterVolume;
+        this.singleAgent = res.agenVolume;
+      });
+
   }
   AddToCalculation() {
     this.totalWater = 0;

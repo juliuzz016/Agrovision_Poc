@@ -1,14 +1,17 @@
-<div class="container">
-    <div class="col-lg-12">
-        <div class="col-lg-12 row">
-            <div class="col-lg-6">
-                <mat-select matInput [(ngModel)]="selectedAgent" placeholder="Select Spraying Agent" required>
-                    <mat-option *ngFor="let agent of agents" [value]="agent">
-                        {{agent.agentDescription}} - {{agent.recomendedDosage}}
-                    </mat-option>
-                </mat-select>
-            </div>
-            <div class="col-lg-6">
+<div class="container center">
+    <mat-card class="card">
+        <mat-card-header>
+            <mat-card-title>Please select the spray agent and sprayer volume </mat-card-title>
+        </mat-card-header>
+        <mat-card-content>
+            <div class="col-lg-12 row">
+                <div class="col-lg-6">
+                    <mat-select matInput [(ngModel)]="selectedAgent" placeholder="Select Spraying Agent" required>
+                        <mat-option *ngFor="let agent of agents" [value]="agent">
+                            {{agent.agentDescription}} - {{agent.recomendedDosage}}
+                        </mat-option>
+                    </mat-select>
+                </div>
                 <div class="col-lg-6">
                     <mat-select matInput [(ngModel)]="selectedSpray" placeholder="Select Spraying Type" required>
                         <mat-option *ngFor="let spray of sprays" [value]="spray">
@@ -17,20 +20,60 @@
                     </mat-select>
                 </div>
             </div>
-        </div>
-        <div class="col-lg-12 row">
-            <div class="col-lg-6">
+        </mat-card-content>
+    </mat-card>
+
+
+    <mat-card class="card">
+        <mat-card-header>
+            <mat-card-title>Check the fields you will want to use</mat-card-title>
+        </mat-card-header>
+        <mat-card-content>
+            <div class="col-lg-12 row">
                 <mat-selection-list #fieldList [(ngModel)]="selectedFields" (selectionChange)="AddToCalculation()">
                     <mat-list-option *ngFor="let calculatedField of calculatedFields" [value]="calculatedField">
                         {{calculatedField.description}} - ({{calculatedField.fieldSize}}-ha)
                     </mat-list-option>
                 </mat-selection-list>
             </div>
-            <div class="col-lg-6">
-                Total Water Needed: {{totalWater}}
-                Total Agent Needed: {{totalAgent}}
-            </div>
+            <p>Total Water Needed: {{totalWater}}</p>
+            <p>Total Agent Needed: {{totalAgent}}</p>
+        </mat-card-content>
+    </mat-card>
 
-        </div>
-    </div>
+    <mat-card class="card">
+        <mat-card-header>
+            <mat-card-title>You can input the values as indicated below </mat-card-title>
+        </mat-card-header>
+        <mat-card-content>
+            <form [formGroup]="calculateDosageForm">
+                <div class="col-lg-12 row">
+                    <mat-form-field class="full-width-input col-lg-4">
+                        <input matInput name="agenVolume" placeholder="Recomended Dosage" formControlName="agenVolume"
+                            type="number" min="1">
+                        <mat-error>
+                            Input a valid value more then 0.
+                        </mat-error>
+                    </mat-form-field>
+                    <mat-form-field class="full-width-input col-lg-4">
+                        <input matInput name="fieldSize" placeholder="Field Size in (ha)" formControlName="fieldSize"
+                            type="number" min="1">
+                        <mat-error>
+                            Input a valid value more then 0.
+                        </mat-error>
+                    </mat-form-field>
+                    <mat-form-field class="full-width-input col-lg-4">
+                        <input matInput name="waterRate" placeholder="Rate of water in L" formControlName="waterRate"
+                            type="number" min="1">
+                        <mat-error>
+                            Input a valid value more then 0.
+                        </mat-error>
+                    </mat-form-field>
+                </div>
+                <p>Water Needed: {{singleWater}}</p>
+                <p>Agent Needed: {{singleAgent}}</p>
+            </form>
+            <button mat-raised-button class="col-lg-12" color="primary" (click)="CalculateSingle()">Calculate</button>
+        </mat-card-content>
+    </mat-card>
 </div>
