@@ -1,7 +1,7 @@
 # Agrovision_Poc
 
 This is an assessment done for agrovision calculator.
-This is a sample micro service made with dot net core using Microsoft Orleans(https://dotnet.github.io/orleans/)for hosting the service logic, Interservice Comunication done using DotNetCore gRPC Services(https://docs.microsoft.com/en-us/aspnet/core/grpc/?view=aspnetcore-3.1) and comucation to the website is done with a standard Web Api and Gateway.
+This is a sample micro service made with dot net core using Microsoft Orleans(https://dotnet.github.io/orleans/ )for hosting the service logic, Interservice Comunication done using DotNetCore gRPC Services(https://docs.microsoft.com/en-us/aspnet/core/grpc/?view=aspnetcore-3.1) and comucation to the website is done with a standard Web Api and Gateway.
 
 
 Getting Started:
