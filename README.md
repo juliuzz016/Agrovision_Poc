@@ -1,6 +1,9 @@
 # Agrovision_Poc
 
 This is an assessment done for agrovision calculator.
+This is a sample micro service made with dot net core using Microsoft Orleans(https://dotnet.github.io/orleans/)for hosting the service logic, Interservice Comunication done using DotNetCore gRPC Services(https://docs.microsoft.com/en-us/aspnet/core/grpc/?view=aspnetcore-3.1) and comucation to the website is done with a standard Web Api and Gateway.
+
+
 Getting Started:
 1. Instal the dotnet core 3.1 sdk.
 2. Project uses an mssql database to store pre-configured data(Field sizes, Spraying Agents, Spraying volunms).
